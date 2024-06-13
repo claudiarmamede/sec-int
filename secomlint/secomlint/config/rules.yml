@@ -1,6 +1,8 @@
 # active [0,1]: 0 disables the rule; 1 enables the rule. By default it is enabled.
 # type [0,1]: 0 reports an warning; 1 reports an error.
 # value: value to use for the rule.
+
+# header related rules
 header_max_length:
   active: true
   type: 0 
@@ -12,51 +14,89 @@ header_is_not_empty:
 header_starts_with_type:
   active: true
   type: 1
-  value: 'found'
-header_ends_with_vuln_id:
+  value: 'vuln-detect'
+header_identifies_weakness:
+  active: true
+  type: 1
+header_ends_with_severity:
+  active: true
+  type: 0 # you may not know how severe the vulnerability is
+
+
+# summary related rules
+summary_has_what:
+  active: true
+  type: 1 
+  value: 'what'
+
+what_identifies_weakness:
   active: true
   type: 0
-body_max_length:
+
+summary_has_why:
+  active: true
+  type: 1 
+  value: 'why'
+
+summary_has_how:
+  active: true
+  type: 1 
+  value: 'how'
+
+summary_has_when: 
+  active: true
+  type: 0 
+  value: 'when'
+
+summary_max_length:
   active: true
   type: 0
-  value: 75
+  value: 150
+
+# explanation/body related rules
 body_is_not_empty:
   active: true
   type: 1
   value: 0
-body_has_three_paragraphs:
+body_has_weakness:
   active: true
   type: 1
-metadata_has_weakness:
+body_has_severity:
   active: true
   type: 1
-metadata_has_severity:
+body_has_location_file:
   active: true
   type: 1
-metadata_has_detection:
+body_has_location_method:
+  active: true
+  type: 1
+body_has_location_line:
+  active: true
+  type: 1
+body_has_unchecked_vars:
+  active: true:
+  type: 0
+body_has_checked_vars:
   active: true
   type: 0
-metadata_has_report:
+body_has_sources:
   active: true
   type: 0
-metadata_has_cvss:
+body_has_sinks:
   active: true
   type: 0
-metadata_has_introduced_in:
-  active: true
-  type: 0
+
+# contact related 
 contact_has_reported_by:
   active: true
   type: 0
   value: 'reported-by'
-contact_has_signed_off_by:
-  active: true
-  type: 1
-  value: 'signed-off-by'
+
 contact_has_co_authored_by:
   active: true
   type: 0
   value: 'co-authored-by'
-bugtracker_has_reference:
+
+contact_identifies_detection_strategy:
   active: true
-  type: 0
+  type: 1

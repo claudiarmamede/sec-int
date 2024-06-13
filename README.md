@@ -1,7 +1,7 @@
 # Linter to measure compliance aganst 
 
 ```
-1   Found <weakness/type> in <file:lines> (<severity>)
+1   vuln-detect: <weakness> in <file:lines> (severity: <severity>)
 2
 3   [Summary explanation of the subject/header in ~75 words.]
 4     What: Explain the security issue(s) that was detected.
@@ -10,7 +10,7 @@
 7     When: Describe when the vulnerability was found (DD-MM-YYYY)   
 8
 9   [Vulnerability description]
-10     Weakness/Type: weakness identification or CWE-ID. 
+10    Weakness: weakness identification or CWE-ID. 
 11    Severity: severity of the issue (Low, Medium, High, Critical).
 12    File: vulnerability location at file-level
 13    Location: vulnerability location at function/module-level
