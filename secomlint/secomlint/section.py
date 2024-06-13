@@ -1,4 +1,4 @@
-"""This module abstracts the different sections of a commit message."""
+"""This module abstracts the different sections of a report."""
 
 class Section:
     def __init__(self) -> None:
@@ -26,14 +26,15 @@ class Header(Section):
         super().set_entities(entities)
 
 
-class Body(Section):
-    def __init__(self, lines=None, entities=None) -> None:
+class Summary(Section):
+    def __init__(self, lines=None, tag=None, entities=None) -> None:
         super().__init__()
         super().set_lines(lines)
         super().set_entities(entities)
+        super().set_tag(tag)
 
 
-class Metadata(Section):
+class Explanation(Section):
     def __init__(self, lines=None, tag=None, entities=None) -> None:
         super().__init__()
         super().set_lines(lines)
@@ -47,14 +48,3 @@ class Contact(Section):
         super().set_lines(lines)
         super().set_entities(entities)
         super().set_tag(tag)
-
-
-class Bugtracker(Section):
-    def __init__(self, lines=None, tag=None, entities=None) -> None:
-        super().__init__()
-        super().set_lines(lines)
-        super().set_entities(entities)
-        super().set_tag(tag)
-
-    def add_line(self, line):
-        super().append_line(line)

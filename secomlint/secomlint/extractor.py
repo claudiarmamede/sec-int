@@ -8,7 +8,7 @@ class Extractor:
         self.engine.remove_pipe("ner")
         self.engine.add_pipe("entity_ruler").from_disk(
             f"{os.path.dirname(os.path.abspath(__file__))}/entities/patterns.jsonl")
-
+        
     def entities(self, lines):
-        return [(ent.text, ent.label_, ent.ent_id_)
-                for ent in self.engine('\n'.join(lines)).ents]
+        return [(ent.text, ent.label_)
+                for ent in self.engine(lines).ents]

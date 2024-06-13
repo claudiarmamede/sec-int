@@ -114,6 +114,7 @@
 {"label":"DETECTION","pattern":[{"LOWER": "coverity"}]}
 {"label":"DETECTION","pattern":[{"LOWER": "manual"}]}
 
+
 {"label": "SECWORD", "pattern": [{"LOWER": "xml"}, {"LOWER": {"REGEX": "external"}}, {"LOWER": {"REGEX": "entit"}}]}
 {"label": "SECWORD", "pattern": [{"LOWER": {"REGEX": "external"}}, {"LOWER": "xml"}, {"LOWER": {"REGEX": "entit"}}]}
 {"label": "SECWORD", "pattern": [{"LOWER": {"REGEX": "size"}}, {"LOWER": {"REGEX": "range"}}, {"LOWER": {"REGEX": "check"}}]}
@@ -934,902 +935,902 @@
 {"label": "SECWORD", "pattern": [{"LOWER": {"REGEX": "checksum"}}]}
 {"label": "SECWORD", "pattern": [{"LOWER": "polluted"}]}
 {"label": "SECWORD", "pattern": [{"LOWER": "segfault"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "attack"}, {"LOWER": "surface"}]}
-{"label": "secword", "pattern": [{"LOWER": "expired"}, {"LOWER": "pointer"}, {"LOWER": "dereference"}]}
-{"label": "secword", "pattern": [{"LOWER": "permissive"}, {"LOWER": "regular"}, {"LOWER": "expression"}]}
-{"label": "secword", "pattern": [{"LOWER": "forced"}, {"LOWER": "browsing"}]}
-{"label": "secword", "pattern": [{"LOWER": "temporary"}, {"LOWER": "file"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "credentials"}]}
-{"label": "secword", "pattern": [{"LOWER": "input"}, {"LOWER": "validation"}, {"LOWER": "problems"}]}
-{"label": "secword", "pattern": [{"LOWER": "heap"}, {"LOWER": "corruption"}]}
-{"label": "secword", "pattern": [{"LOWER": "steganography"}]}
-{"label": "secword", "pattern": [{"LOWER": "unsynchronized"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "privilege"}, {"LOWER": "management"}]}
-{"label": "secword", "pattern": [{"LOWER": "division"}, {"LOWER": "by"}, {"LOWER": "0"}]}
-{"label": "secword", "pattern": [{"LOWER": "precedence"}, {"LOWER": "logic"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "address"}, {"LOWER": "length"}]}
-{"label": "secword", "pattern": [{"LOWER": "numeric"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "coding"}, {"LOWER": "standard"}]}
-{"label": "secword", "pattern": [{"LOWER": "rainbow"}, {"LOWER": "table"}]}
-{"label": "secword", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "network"}, {"LOWER": "resource"}, {"LOWER": "configuration"}]}
-{"label": "secword", "pattern": [{"LOWER": "non"}, {"LOWER": "ubiquitous"}, {"LOWER": "api"}]}
-{"label": "secword", "pattern": [{"LOWER": "inconsistent"}, {"LOWER": "naming"}, {"LOWER": "conventions"}]}
-{"label": "secword", "pattern": [{"LOWER": "spoof"}]}
-{"label": "secword", "pattern": [{"LOWER": "confidential"}]}
-{"label": "secword", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "input"}]}
-{"label": "secword", "pattern": [{"LOWER": "glitch"}]}
-{"label": "secword", "pattern": [{"LOWER": "owasp"}]}
-{"label": "secword", "pattern": [{"LOWER": "illegitimate"}]}
-{"label": "secword", "pattern": [{"LOWER": "symlink"}, {"LOWER": "following"}]}
-{"label": "secword", "pattern": [{"LOWER": "sensitiveinformation"}]}
-{"label": "secword", "pattern": [{"LOWER": "pbkdf2"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "index"}]}
-{"label": "secword", "pattern": [{"LOWER": "weak"}, {"LOWER": "password"}, {"LOWER": "recovery"}]}
-{"label": "secword", "pattern": [{"LOWER": "open"}, {"LOWER": "auth"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "validate"}]}
-{"label": "secword", "pattern": [{"LOWER": "machine"}, {"LOWER": "dependent"}, {"LOWER": "data"}, {"LOWER": "representation"}]}
-{"label": "secword", "pattern": [{"LOWER": "remote"}, {"LOWER": "code"}, {"LOWER": "execution"}]}
-{"label": "secword", "pattern": [{"LOWER": "race"}, {"LOWER": "condition"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "target"}]}
-{"label": "secword", "pattern": [{"LOWER": "comparison"}, {"LOWER": "using"}, {"LOWER": "wrong"}, {"LOWER": "factors"}]}
-{"label": "secword", "pattern": [{"LOWER": "openid"}]}
-{"label": "secword", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "format"}, {"LOWER": "string"}]}
-{"label": "secword", "pattern": [{"LOWER": "type"}, {"LOWER": "safety"}]}
-{"label": "secword", "pattern": [{"LOWER": "known"}, {"LOWER": "vulnerabilities"}]}
-{"label": "secword", "pattern": [{"LOWER": "concurrency"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "length"}, {"LOWER": "value"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "resource"}, {"LOWER": "shutdown"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "network"}, {"LOWER": "resource"}, {"LOWER": "configuration"}]}
-{"label": "secword", "pattern": [{"LOWER": "malformed"}, {"LOWER": "url"}]}
-{"label": "secword", "pattern": [{"LOWER": "proxy"}, {"LOWER": "header"}]}
-{"label": "secword", "pattern": [{"LOWER": "scripting"}]}
-{"label": "secword", "pattern": [{"LOWER": "predictability"}, {"LOWER": "problems"}]}
-{"label": "secword", "pattern": [{"LOWER": "trojan"}, {"LOWER": "horse"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "cleanup"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "reliance"}]}
-{"label": "secword", "pattern": [{"LOWER": "usage"}, {"LOWER": "permission"}]}
-{"label": "secword", "pattern": [{"LOWER": "adversarial"}, {"LOWER": "input"}, {"LOWER": "perturbations"}]}
-{"label": "secword", "pattern": [{"LOWER": "access"}, {"LOWER": "control"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "model"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "mccabe"}, {"LOWER": "cyclomatic"}, {"LOWER": "complexity"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "cryptographic"}, {"LOWER": "storage"}]}
-{"label": "secword", "pattern": [{"LOWER": "off"}, {"LOWER": "by"}, {"LOWER": "one"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "spyware"}]}
-{"label": "secword", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "file"}, {"LOWER": "descriptor"}, {"LOWER": "consumption"}]}
-{"label": "secword", "pattern": [{"LOWER": "expression"}, {"LOWER": "language"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "ip"}, {"LOWER": "spoofing"}]}
-{"label": "secword", "pattern": [{"LOWER": "buffer"}, {"LOWER": "underwrite"}]}
-{"label": "secword", "pattern": [{"LOWER": "crlf"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "expression"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "authentication"}, {"LOWER": "bypass"}]}
-{"label": "secword", "pattern": [{"LOWER": "dos"}]}
-{"label": "secword", "pattern": [{"LOWER": "eavesdropping"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "initialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "incompatible"}, {"LOWER": "types"}]}
-{"label": "secword", "pattern": [{"LOWER": "forge"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "control"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "password"}, {"LOWER": "field"}, {"LOWER": "masking"}]}
-{"label": "secword", "pattern": [{"LOWER": "unvalidated"}, {"LOWER": "input"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "use"}]}
-{"label": "secword", "pattern": [{"LOWER": "unused"}, {"LOWER": "validation"}, {"LOWER": "form"}]}
-{"label": "secword", "pattern": [{"LOWER": "signal"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "external"}, {"LOWER": "behavioral"}, {"LOWER": "inconsistency"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "locking"}]}
-{"label": "secword", "pattern": [{"LOWER": "miscalculated"}, {"LOWER": "null"}, {"LOWER": "termination"}]}
-{"label": "secword", "pattern": [{"LOWER": "file"}, {"LOWER": "permission"}]}
-{"label": "secword", "pattern": [{"LOWER": "incompatible"}, {"LOWER": "type"}]}
-{"label": "secword", "pattern": [{"LOWER": "empty"}, {"LOWER": "exception"}, {"LOWER": "block"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "range"}, {"LOWER": "pointer"}, {"LOWER": "offset"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "sanitization"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "buffer"}, {"LOWER": "length"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "execution"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "assigned"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "json"}, {"LOWER": "serialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "blacklist"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bounds"}, {"LOWER": "write"}]}
-{"label": "secword", "pattern": [{"LOWER": "scriptkiddie"}]}
-{"label": "secword", "pattern": [{"LOWER": "broken"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "cipher"}]}
-{"label": "secword", "pattern": [{"LOWER": "spnego"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "initialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "data"}, {"LOWER": "exposure"}]}
-{"label": "secword", "pattern": [{"LOWER": "http"}, {"LOWER": "flood"}]}
-{"label": "secword", "pattern": [{"LOWER": "unreachable"}, {"LOWER": "exit"}, {"LOWER": "condition"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "memory"}]}
-{"label": "secword", "pattern": [{"LOWER": "signing"}]}
-{"label": "secword", "pattern": [{"LOWER": "management"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "interface"}, {"LOWER": "security"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "use"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "after"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "free"}]}
-{"label": "secword", "pattern": [{"LOWER": "weak"}, {"LOWER": "password"}]}
-{"label": "secword", "pattern": [{"LOWER": "file"}, {"LOWER": "descriptor"}, {"LOWER": "leak"}]}
-{"label": "secword", "pattern": [{"LOWER": "secure"}]}
-{"label": "secword", "pattern": [{"LOWER": "misrepresentation"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "ownership"}]}
-{"label": "secword", "pattern": [{"LOWER": "flaws"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "adversarial"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "check"}]}
-{"label": "secword", "pattern": [{"LOWER": "double"}, {"LOWER": "free"}]}
-{"label": "secword", "pattern": [{"LOWER": "restrictive"}, {"LOWER": "regular"}, {"LOWER": "expression"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "adherence"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "release"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "password"}]}
-{"label": "secword", "pattern": [{"LOWER": "duplicate"}, {"LOWER": "validation"}, {"LOWER": "forms"}]}
-{"label": "secword", "pattern": [{"LOWER": "unprotected"}, {"LOWER": "alternate"}, {"LOWER": "channel"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "bounds"}, {"LOWER": "write"}]}
-{"label": "secword", "pattern": [{"LOWER": "xml"}, {"LOWER": "entity"}, {"LOWER": "expansion"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bounds"}]}
-{"label": "secword", "pattern": [{"LOWER": "php"}, {"LOWER": "remote"}, {"LOWER": "file"}, {"LOWER": "inclusion"}]}
-{"label": "secword", "pattern": [{"LOWER": "white"}, {"LOWER": "list"}]}
-{"label": "secword", "pattern": [{"LOWER": "asp.net"}, {"LOWER": "misconfiguration"}]}
-{"label": "secword", "pattern": [{"LOWER": "segfault"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "site"}]}
-{"label": "secword", "pattern": [{"LOWER": "permission"}, {"LOWER": "escalation"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "resource"}, {"LOWER": "transfer"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"LOWER": "link"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "authorization"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "buffer"}, {"LOWER": "length"}, {"LOWER": "computation"}]}
-{"label": "secword", "pattern": [{"LOWER": "protect"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "data"}, {"LOWER": "query"}]}
-{"label": "secword", "pattern": [{"LOWER": "heap"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "based"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "inject"}]}
-{"label": "secword", "pattern": [{"LOWER": "top"}, {"LOWER": "syn"}, {"LOWER": "flood"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "control"}]}
-{"label": "secword", "pattern": [{"LOWER": "exposed"}, {"LOWER": "dangerous"}, {"LOWER": "method"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "privileges"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "scope"}]}
-{"label": "secword", "pattern": [{"LOWER": "unsafe"}, {"LOWER": "reflection"}]}
-{"label": "secword", "pattern": [{"LOWER": "access"}, {"LOWER": "role"}]}
-{"label": "secword", "pattern": [{"LOWER": "meterpreter"}]}
-{"label": "secword", "pattern": [{"LOWER": "unrestricted"}, {"LOWER": "upload"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "serialization"}, {"LOWER": "control"}, {"LOWER": "element"}]}
-{"label": "secword", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "communication"}]}
-{"label": "secword", "pattern": [{"LOWER": "user"}, {"LOWER": "interface"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "firewall"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "synchronisation"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "block"}, {"LOWER": "delimitation"}]}
-{"label": "secword", "pattern": [{"LOWER": "platform"}, {"LOWER": "dependent"}, {"LOWER": "third"}, {"LOWER": "party"}]}
-{"label": "secword", "pattern": [{"LOWER": "cross"}, {"LOWER": "cutting"}]}
-{"label": "secword", "pattern": [{"LOWER": "static"}, {"LOWER": "code"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "type"}, {"LOWER": "conversion"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "authentication"}, {"LOWER": "attempts"}]}
-{"label": "secword", "pattern": [{"LOWER": "unintended"}, {"LOWER": "proxy"}]}
-{"label": "secword", "pattern": [{"LOWER": "outofbounds"}, {"LOWER": "read"}]}
-{"label": "secword", "pattern": [{"LOWER": "wrong"}, {"LOWER": "handler"}]}
-{"label": "secword", "pattern": [{"LOWER": "cryptographic"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "null"}, {"LOWER": "pointer"}, {"LOWER": "exception"}]}
-{"label": "secword", "pattern": [{"LOWER": "timing"}, {"LOWER": "discrepancy"}]}
-{"label": "secword", "pattern": [{"LOWER": "confused"}, {"LOWER": "deputy"}]}
-{"label": "secword", "pattern": [{"LOWER": "path"}, {"LOWER": "traversal"}]}
-{"label": "secword", "pattern": [{"LOWER": "cbc"}]}
-{"label": "secword", "pattern": [{"LOWER": "non"}, {"LOWER": "serializable"}, {"LOWER": "object"}, {"LOWER": "stored"}]}
-{"label": "secword", "pattern": [{"LOWER": "handler"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "data"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "privilege"}, {"LOWER": "assignment"}]}
-{"label": "secword", "pattern": [{"LOWER": "non"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "serializable"}, {"LOWER": "object"}, {"LOWER": "stored"}]}
-{"label": "secword", "pattern": [{"LOWER": "asset"}]}
-{"label": "secword", "pattern": [{"LOWER": "common"}, {"LOWER": "weakness"}, {"LOWER": "enumeration"}]}
-{"label": "secword", "pattern": [{"LOWER": "spam"}]}
-{"label": "secword", "pattern": [{"LOWER": "peidss"}]}
-{"label": "secword", "pattern": [{"LOWER": "cookie"}]}
-{"label": "secword", "pattern": [{"LOWER": "data"}, {"LOWER": "structure"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "dead"}, {"LOWER": "code"}]}
-{"label": "secword", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "information"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "literals"}]}
-{"label": "secword", "pattern": [{"LOWER": "buffer"}, {"LOWER": "underflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "order"}]}
-{"label": "secword", "pattern": [{"LOWER": "fuzz"}]}
-{"label": "secword", "pattern": [{"LOWER": "adware"}]}
-{"label": "secword", "pattern": [{"LOWER": "validation"}, {"LOWER": "problems"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "limitation"}]}
-{"label": "secword", "pattern": [{"LOWER": "uninitialized"}, {"LOWER": "resource"}]}
-{"label": "secword", "pattern": [{"LOWER": "plaintext"}, {"LOWER": "password"}]}
-{"label": "secword", "pattern": [{"LOWER": "unmaintained"}, {"LOWER": "third"}, {"LOWER": "party"}, {"LOWER": "components"}]}
-{"label": "secword", "pattern": [{"LOWER": "xml"}, {"LOWER": "external"}, {"LOWER": "entities"}]}
-{"label": "secword", "pattern": [{"LOWER": "heap"}, {"LOWER": "based"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrectly"}, {"LOWER": "resolved"}, {"LOWER": "name"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "handling"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "control"}, {"LOWER": "flow"}, {"LOWER": "scoping"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "endpoint"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "input"}, {"LOWER": "transformation"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "documentation"}]}
-{"label": "secword", "pattern": [{"LOWER": "size"}, {"LOWER": "check"}]}
-{"label": "secword", "pattern": [{"LOWER": "honey"}, {"LOWER": "pot"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bound"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "cross"}, {"LOWER": "boundary"}, {"LOWER": "removal"}]}
-{"label": "secword", "pattern": [{"LOWER": "prototype"}, {"LOWER": "pollution"}]}
-{"label": "secword", "pattern": [{"LOWER": "write"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "what"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "where"}, {"LOWER": "condition"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "less"}, {"LOWER": "secure"}, {"LOWER": "algorithm"}]}
-{"label": "secword", "pattern": [{"LOWER": "burp"}]}
-{"label": "secword", "pattern": [{"LOWER": "csrf"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "authorization"}]}
-{"label": "secword", "pattern": [{"LOWER": "single"}, {"LOWER": "sign"}, {"LOWER": "on"}]}
-{"label": "secword", "pattern": [{"LOWER": "data"}, {"LOWER": "exposure"}]}
-{"label": "secword", "pattern": [{"LOWER": "reversible"}, {"LOWER": "oneway"}, {"LOWER": "hash"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "enforcement"}]}
-{"label": "secword", "pattern": [{"LOWER": "underflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "server"}, {"LOWER": "side"}, {"LOWER": "data"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "design"}, {"LOWER": "documentation"}]}
-{"label": "secword", "pattern": [{"LOWER": "rsa"}]}
-{"label": "secword", "pattern": [{"LOWER": "unmaintained"}, {"LOWER": "third"}, {"LOWER": "party"}]}
-{"label": "secword", "pattern": [{"LOWER": "crypto"}]}
-{"label": "secword", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "sensitive"}, {"LOWER": "data"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "encryption"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "pointer"}]}
-{"label": "secword", "pattern": [{"LOWER": "nvd"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "cleanup"}]}
-{"label": "secword", "pattern": [{"LOWER": "unparsed"}, {"LOWER": "raw"}, {"LOWER": "web"}, {"LOWER": "content"}, {"LOWER": "delivery"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "ownership"}, {"LOWER": "assignment"}]}
-{"label": "secword", "pattern": [{"LOWER": "inconsistent"}, {"LOWER": "interpretation"}]}
-{"label": "secword", "pattern": [{"LOWER": "rootkit"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "type"}, {"LOWER": "distinction"}]}
-{"label": "secword", "pattern": [{"LOWER": "rbac"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "documentation"}]}
-{"label": "secword", "pattern": [{"LOWER": "comparison"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "single"}, {"LOWER": "factor"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "failed"}, {"LOWER": "chroot"}, {"LOWER": "jail"}]}
-{"label": "secword", "pattern": [{"LOWER": "ssrf"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "comparison"}]}
-{"label": "secword", "pattern": [{"LOWER": "server"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "side"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "length"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "initialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "invalid"}, {"LOWER": "memory"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "spoofing"}]}
-{"label": "secword", "pattern": [{"LOWER": "theft"}]}
-{"label": "secword", "pattern": [{"LOWER": "clickjacking"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "operator"}]}
-{"label": "secword", "pattern": [{"LOWER": "time"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "check"}, {"LOWER": "time"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "use"}]}
-{"label": "secword", "pattern": [{"LOWER": "botnet"}]}
-{"label": "secword", "pattern": [{"LOWER": "object"}, {"LOWER": "hijack"}]}
-{"label": "secword", "pattern": [{"LOWER": "saving"}, {"LOWER": "unserializable"}, {"LOWER": "objects"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "default"}, {"LOWER": "initialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "default"}, {"LOWER": "variable"}]}
-{"label": "secword", "pattern": [{"LOWER": "file"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "threads"}, {"LOWER": "locked"}]}
-{"label": "secword", "pattern": [{"LOWER": "ldap"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "endpoint"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "resource"}, {"LOWER": "pool"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "privilege"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "inputs"}]}
-{"label": "secword", "pattern": [{"LOWER": "cisq"}]}
-{"label": "secword", "pattern": [{"LOWER": "directory"}, {"LOWER": "traversal"}]}
-{"label": "secword", "pattern": [{"LOWER": "inadequate"}, {"LOWER": "encryption"}, {"LOWER": "strength"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "session"}, {"LOWER": "management"}]}
-{"label": "secword", "pattern": [{"LOWER": "crosssite"}, {"LOWER": "scripting"}]}
-{"label": "secword", "pattern": [{"LOWER": "ransomware"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "cryptographic"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "isolation"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "neutralization"}]}
-{"label": "secword", "pattern": [{"LOWER": "man"}, {"LOWER": "in"}, {"LOWER": "the"}, {"LOWER": "middle"}]}
-{"label": "secword", "pattern": [{"LOWER": "uncaught"}, {"LOWER": "exception"}]}
-{"label": "secword", "pattern": [{"LOWER": "malicious"}, {"LOWER": "file"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "usage"}]}
-{"label": "secword", "pattern": [{"LOWER": "inconsistent"}, {"LOWER": "naming"}]}
-{"label": "secword", "pattern": [{"LOWER": "misconfiguration"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "array"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "fingerprint"}]}
-{"label": "secword", "pattern": [{"LOWER": "trust"}, {"LOWER": "boundary"}, {"LOWER": "violation"}]}
-{"label": "secword", "pattern": [{"LOWER": "processing"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "machine"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "dependent"}, {"LOWER": "data"}, {"LOWER": "representation"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "critical"}, {"LOWER": "step"}]}
-{"label": "secword", "pattern": [{"LOWER": "heapbased"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "filtering"}]}
-{"label": "secword", "pattern": [{"LOWER": "metasploit"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "function"}, {"LOWER": "level"}, {"LOWER": "access"}, {"LOWER": "control"}]}
-{"label": "secword", "pattern": [{"LOWER": "deserialisation"}]}
-{"label": "secword", "pattern": [{"LOWER": "doublechecked"}, {"LOWER": "locking"}]}
-{"label": "secword", "pattern": [{"LOWER": "file"}, {"LOWER": "integrity"}, {"LOWER": "check"}]}
-{"label": "secword", "pattern": [{"LOWER": "hmac"}]}
-{"label": "secword", "pattern": [{"LOWER": "dotfuscator"}]}
-{"label": "secword", "pattern": [{"LOWER": "j2ee"}, {"LOWER": "misconfiguration"}]}
-{"label": "secword", "pattern": [{"LOWER": "broken"}, {"LOWER": "access"}, {"LOWER": "control"}]}
-{"label": "secword", "pattern": [{"LOWER": "risky"}, {"LOWER": "cryptographic"}, {"LOWER": "algorithm"}]}
-{"label": "secword", "pattern": [{"LOWER": "empty"}, {"LOWER": "password"}]}
-{"label": "secword", "pattern": [{"LOWER": "identity"}, {"LOWER": "impersonation"}]}
-{"label": "secword", "pattern": [{"LOWER": "crc"}]}
-{"label": "secword", "pattern": [{"LOWER": "deep"}, {"LOWER": "nesting"}]}
-{"label": "secword", "pattern": [{"LOWER": "smart"}, {"LOWER": "assembly"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "model"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "defense"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "resource"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "always"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "incorrect"}, {"LOWER": "control"}, {"LOWER": "flow"}]}
-{"label": "secword", "pattern": [{"LOWER": "pointer"}, {"LOWER": "dereference"}]}
-{"label": "secword", "pattern": [{"LOWER": "poisoning"}]}
-{"label": "secword", "pattern": [{"LOWER": "channel"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "defence"}]}
-{"label": "secword", "pattern": [{"LOWER": "malicious"}]}
-{"label": "secword", "pattern": [{"LOWER": "singlefactor"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "hidden"}, {"LOWER": "functionality"}]}
-{"label": "secword", "pattern": [{"LOWER": "timeofcheck"}, {"LOWER": "timeofuse"}]}
-{"label": "secword", "pattern": [{"LOWER": "permissive"}, {"LOWER": "whitelist"}]}
-{"label": "secword", "pattern": [{"LOWER": "empty"}, {"LOWER": "exception"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "session"}, {"LOWER": "expiration"}]}
-{"label": "secword", "pattern": [{"LOWER": "self"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "generated"}, {"LOWER": "error"}, {"LOWER": "message"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "required"}, {"LOWER": "cryptographic"}, {"LOWER": "step"}]}
-{"label": "secword", "pattern": [{"LOWER": "disclosure"}]}
-{"label": "secword", "pattern": [{"LOWER": "privacy"}, {"LOWER": "violation"}]}
-{"label": "secword", "pattern": [{"LOWER": "privilege"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "source"}]}
-{"label": "secword", "pattern": [{"LOWER": "jndi"}, {"LOWER": "lookup"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "behavior"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "verification"}]}
-{"label": "secword", "pattern": [{"LOWER": "resource"}, {"LOWER": "leak"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "cryptographic"}, {"LOWER": "key"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "filtering"}]}
-{"label": "secword", "pattern": [{"LOWER": "weak"}, {"LOWER": "pseudorandom"}, {"LOWER": "number"}]}
-{"label": "secword", "pattern": [{"LOWER": "xml"}, {"LOWER": "external"}, {"LOWER": "entity"}, {"LOWER": "reference"}]}
-{"label": "secword", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "cookie"}]}
-{"label": "secword", "pattern": [{"LOWER": "shell"}, {"LOWER": "code"}]}
-{"label": "secword", "pattern": [{"LOWER": "xxe"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "unrestricted"}, {"LOWER": "lock"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "synchronization"}]}
-{"label": "secword", "pattern": [{"LOWER": "gss"}, {"LOWER": "api"}]}
-{"label": "secword", "pattern": [{"LOWER": "public"}, {"LOWER": "key"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "behavioral"}, {"LOWER": "summary"}]}
-{"label": "secword", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "memory"}, {"LOWER": "allocation"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "null"}, {"LOWER": "termination"}]}
-{"label": "secword", "pattern": [{"LOWER": "hardcoded"}]}
-{"label": "secword", "pattern": [{"LOWER": "data"}, {"LOWER": "sanitization"}]}
-{"label": "secword", "pattern": [{"LOWER": "cross"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "site"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
-{"label": "secword", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "literals"}]}
-{"label": "secword", "pattern": [{"LOWER": "remote"}, {"LOWER": "execute"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "default"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "weakness"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "report"}]}
-{"label": "secword", "pattern": [{"LOWER": "kerberos"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "credentials"}]}
-{"label": "secword", "pattern": [{"LOWER": "delegation"}]}
-{"label": "secword", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "storage"}]}
-{"label": "secword", "pattern": [{"LOWER": "porous"}, {"LOWER": "defenses"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "control"}, {"LOWER": "sphere"}]}
-{"label": "secword", "pattern": [{"LOWER": "secure"}, {"LOWER": "coding"}]}
-{"label": "secword", "pattern": [{"LOWER": "path"}, {"LOWER": "equivalence"}]}
-{"label": "secword", "pattern": [{"LOWER": "time"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "check"}]}
-{"label": "secword", "pattern": [{"LOWER": "tunneling"}]}
-{"label": "secword", "pattern": [{"LOWER": "escaping"}]}
-{"label": "secword", "pattern": [{"LOWER": "privilege"}, {"LOWER": "context"}, {"LOWER": "switching"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "honeypot"}]}
-{"label": "secword", "pattern": [{"LOWER": "unvalidated"}, {"LOWER": "redirects"}]}
-{"label": "secword", "pattern": [{"LOWER": "threat"}]}
-{"label": "secword", "pattern": [{"LOWER": "pen"}, {"LOWER": "test"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "buffer"}]}
-{"label": "secword", "pattern": [{"LOWER": "algorithm"}, {"LOWER": "downgrade"}]}
-{"label": "secword", "pattern": [{"LOWER": "tampering"}]}
-{"label": "secword", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "data"}]}
-{"label": "secword", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "password"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bounds"}, {"LOWER": "read"}]}
-{"label": "secword", "pattern": [{"LOWER": "unintended"}, {"LOWER": "intermediary"}]}
-{"label": "secword", "pattern": [{"LOWER": "overflows"}]}
-{"label": "secword", "pattern": [{"LOWER": "unsafe"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "literals"}]}
-{"label": "secword", "pattern": [{"LOWER": "unrestricted"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "information"}, {"LOWER": "uncleared"}]}
-{"label": "secword", "pattern": [{"LOWER": "buffer"}, {"LOWER": "under"}, {"LOWER": "read"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "neutralisation"}]}
-{"label": "secword", "pattern": [{"LOWER": "two"}, {"LOWER": "factor"}]}
-{"label": "secword", "pattern": [{"LOWER": "restrictive"}, {"LOWER": "account"}, {"LOWER": "lockout"}]}
-{"label": "secword", "pattern": [{"LOWER": "captcha"}]}
-{"label": "secword", "pattern": [{"LOWER": "obfuscate"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "blacklist"}]}
-{"label": "secword", "pattern": [{"LOWER": "repudiation"}]}
-{"label": "secword", "pattern": [{"LOWER": "cve"}]}
-{"label": "secword", "pattern": [{"LOWER": "pointer"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "self"}, {"LOWER": "generated"}, {"LOWER": "error"}, {"LOWER": "message"}]}
-{"label": "secword", "pattern": [{"LOWER": "http"}, {"LOWER": "parameter"}, {"LOWER": "pollution"}]}
-{"label": "secword", "pattern": [{"LOWER": "password"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "warnings"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "xml"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "bad"}, {"LOWER": "coding"}, {"LOWER": "practices"}]}
-{"label": "secword", "pattern": [{"LOWER": "outofbounds"}]}
-{"label": "secword", "pattern": [{"LOWER": "external"}, {"LOWER": "entity"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "bound"}, {"LOWER": "write"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "method"}]}
-{"label": "secword", "pattern": [{"LOWER": "doubled"}, {"LOWER": "character"}, {"LOWER": "xss"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "standardized"}, {"LOWER": "error"}, {"LOWER": "handling"}]}
-{"label": "secword", "pattern": [{"LOWER": "cleanup"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "serialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "http"}, {"LOWER": "request"}, {"LOWER": "smuggling"}]}
-{"label": "secword", "pattern": [{"LOWER": "multiple"}, {"LOWER": "locks"}]}
-{"label": "secword", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "search"}, {"LOWER": "path"}]}
-{"label": "secword", "pattern": [{"LOWER": "reversible"}, {"LOWER": "one"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "way"}, {"LOWER": "hash"}]}
-{"label": "secword", "pattern": [{"LOWER": "0"}, {"LOWER": "day"}]}
-{"label": "secword", "pattern": [{"LOWER": "dot"}, {"LOWER": "dot"}, {"LOWER": "slash"}]}
-{"label": "secword", "pattern": [{"LOWER": "conversion"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "special"}, {"LOWER": "element"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "entropy"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "default"}, {"LOWER": "variable"}, {"LOWER": "initialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "resource"}, {"LOWER": "management"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "certificate"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "use"}]}
-{"label": "secword", "pattern": [{"LOWER": "ddos"}]}
-{"label": "secword", "pattern": [{"LOWER": "inconsistent"}, {"LOWER": "implementations"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}]}
-{"label": "secword", "pattern": [{"LOWER": "cross"}, {"LOWER": "site"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
-{"label": "secword", "pattern": [{"LOWER": "sso"}]}
-{"label": "secword", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "recursion"}]}
-{"label": "secword", "pattern": [{"LOWER": "time"}, {"LOWER": "bomb"}]}
-{"label": "secword", "pattern": [{"LOWER": "uninitialized"}, {"LOWER": "pointer"}]}
-{"label": "secword", "pattern": [{"LOWER": "reflection"}, {"LOWER": "attack"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "control"}, {"LOWER": "flow"}, {"LOWER": "management"}]}
-{"label": "secword", "pattern": [{"LOWER": "intentional"}, {"LOWER": "information"}, {"LOWER": "exposure"}]}
-{"label": "secword", "pattern": [{"LOWER": "data"}, {"LOWER": "processing"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "null"}, {"LOWER": "byte"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "antivirus"}]}
-{"label": "secword", "pattern": [{"LOWER": "inappropriate"}, {"LOWER": "comment"}, {"LOWER": "style"}]}
-{"label": "secword", "pattern": [{"LOWER": "sanitizing"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "synchronization"}]}
-{"label": "secword", "pattern": [{"LOWER": "ctf"}]}
-{"label": "secword", "pattern": [{"LOWER": "ldap"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "unrestricted"}, {"LOWER": "consumption"}]}
-{"label": "secword", "pattern": [{"LOWER": "authorise"}]}
-{"label": "secword", "pattern": [{"LOWER": "vulnerabilities"}]}
-{"label": "secword", "pattern": [{"LOWER": "unauthorized"}, {"LOWER": "control"}]}
-{"label": "secword", "pattern": [{"LOWER": "generic"}, {"LOWER": "exception"}]}
-{"label": "secword", "pattern": [{"LOWER": "infinite"}, {"LOWER": "loop"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "restriction"}]}
-{"label": "secword", "pattern": [{"LOWER": "capture"}, {"LOWER": "the"}, {"LOWER": "flag"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bound"}, {"LOWER": "read"}]}
-{"label": "secword", "pattern": [{"LOWER": "permission"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "neutralization"}]}
-{"label": "secword", "pattern": [{"LOWER": "empty"}, {"LOWER": "synchronized"}, {"LOWER": "block"}]}
-{"label": "secword", "pattern": [{"LOWER": "xpath"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "smartassembly"}]}
-{"label": "secword", "pattern": [{"LOWER": "cursor"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "direct"}, {"LOWER": "object"}, {"LOWER": "reference"}]}
-{"label": "secword", "pattern": [{"LOWER": "nss"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "session"}, {"LOWER": "id"}, {"LOWER": "length"}]}
-{"label": "secword", "pattern": [{"LOWER": "xml"}, {"LOWER": "bomb"}]}
-{"label": "secword", "pattern": [{"LOWER": "trojan"}]}
-{"label": "secword", "pattern": [{"LOWER": "information"}, {"LOWER": "exposure"}]}
-{"label": "secword", "pattern": [{"LOWER": "classic"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "time"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "use"}]}
-{"label": "secword", "pattern": [{"LOWER": "type"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "deserialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "internal"}, {"LOWER": "state"}, {"LOWER": "distinction"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "validate"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "ownership"}, {"LOWER": "management"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "clearing"}]}
-{"label": "secword", "pattern": [{"LOWER": "dangerous"}, {"LOWER": "method"}]}
-{"label": "secword", "pattern": [{"LOWER": "cross"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "site"}, {"LOWER": "scripting"}]}
-{"label": "secword", "pattern": [{"LOWER": "encoding"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "broken"}, {"LOWER": "cryptography"}]}
-{"label": "secword", "pattern": [{"LOWER": "behavioral"}, {"LOWER": "problems"}]}
-{"label": "secword", "pattern": [{"LOWER": "integer"}, {"LOWER": "coercion"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "resource"}, {"LOWER": "locking"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "custom"}, {"LOWER": "error"}, {"LOWER": "page"}]}
-{"label": "secword", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "status"}, {"LOWER": "condition"}]}
-{"label": "secword", "pattern": [{"LOWER": "unexpected"}, {"LOWER": "status"}, {"LOWER": "code"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "provision"}]}
-{"label": "secword", "pattern": [{"LOWER": "dangerous"}, {"LOWER": "operations"}]}
-{"label": "secword", "pattern": [{"LOWER": "alternate"}, {"LOWER": "xss"}]}
-{"label": "secword", "pattern": [{"LOWER": "element"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "sessionid"}, {"LOWER": "length"}]}
-{"label": "secword", "pattern": [{"LOWER": "integrity"}]}
-{"label": "secword", "pattern": [{"LOWER": "cross"}, {"LOWER": "site"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "resource"}, {"LOWER": "use"}]}
-{"label": "secword", "pattern": [{"LOWER": "failing"}, {"LOWER": "open"}]}
-{"label": "secword", "pattern": [{"LOWER": "top"}, {"LOWER": "flood"}]}
-{"label": "secword", "pattern": [{"LOWER": "deserialization"}]}
-{"label": "secword", "pattern": [{"LOWER": "clickfraud"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "use"}]}
-{"label": "secword", "pattern": [{"LOWER": "leftover"}, {"LOWER": "debug"}, {"LOWER": "code"}]}
-{"label": "secword", "pattern": [{"LOWER": "user"}, {"LOWER": "name"}]}
-{"label": "secword", "pattern": [{"LOWER": "unsigned"}, {"LOWER": "conversion"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "cryptographic"}]}
-{"label": "secword", "pattern": [{"LOWER": "checksum"}]}
-{"label": "secword", "pattern": [{"LOWER": "string"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "interaction"}]}
-{"label": "secword", "pattern": [{"LOWER": "early"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "memory"}]}
-{"label": "secword", "pattern": [{"LOWER": "unsafe"}, {"LOWER": "value"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "memory"}, {"LOWER": "release"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "regular"}, {"LOWER": "expression"}]}
-{"label": "secword", "pattern": [{"LOWER": "common"}, {"LOWER": "platform"}, {"LOWER": "enumeration"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "protection"}]}
-{"label": "secword", "pattern": [{"LOWER": "danger"}]}
-{"label": "secword", "pattern": [{"LOWER": "interpretation"}, {"LOWER": "conflict"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "temporary"}, {"LOWER": "file"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "pointer"}, {"LOWER": "use"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "permission"}]}
-{"label": "secword", "pattern": [{"LOWER": "container"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "time"}, {"LOWER": "of"}, {"LOWER": "check"}, {"LOWER": "time"}, {"LOWER": "of"}, {"LOWER": "use"}]}
-{"label": "secword", "pattern": [{"LOWER": "hijack"}]}
-{"label": "secword", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "error"}, {"LOWER": "condition"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "input"}, {"LOWER": "handling"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "default"}]}
-{"label": "secword", "pattern": [{"LOWER": "rijndael"}]}
-{"label": "secword", "pattern": [{"LOWER": "sha"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "behavior"}, {"LOWER": "order"}]}
-{"label": "secword", "pattern": [{"LOWER": "pki"}]}
-{"label": "secword", "pattern": [{"LOWER": "private"}, {"LOWER": "key"}]}
-{"label": "secword", "pattern": [{"LOWER": "signed"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "halstead"}, {"LOWER": "complexity"}]}
-{"label": "secword", "pattern": [{"LOWER": "trap"}, {"LOWER": "door"}]}
-{"label": "secword", "pattern": [{"LOWER": "unauthorized"}, {"LOWER": "control"}, {"LOWER": "sphere"}]}
-{"label": "secword", "pattern": [{"LOWER": "signed"}, {"LOWER": "conversion"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "comparison"}]}
-{"label": "secword", "pattern": [{"LOWER": "openvas"}]}
-{"label": "secword", "pattern": [{"LOWER": "ambiguous"}, {"LOWER": "exception"}, {"LOWER": "type"}]}
-{"label": "secword", "pattern": [{"LOWER": "eval"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "stack"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "based"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "interaction"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "psychological"}, {"LOWER": "acceptability"}]}
-{"label": "secword", "pattern": [{"LOWER": "authority"}]}
-{"label": "secword", "pattern": [{"LOWER": "clearance"}]}
-{"label": "secword", "pattern": [{"LOWER": "gnupg"}]}
-{"label": "secword", "pattern": [{"LOWER": "predictable"}, {"LOWER": "salt"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "access"}, {"LOWER": "control"}]}
-{"label": "secword", "pattern": [{"LOWER": "double"}, {"LOWER": "checked"}, {"LOWER": "locking"}]}
-{"label": "secword", "pattern": [{"LOWER": "snif"}]}
-{"label": "secword", "pattern": [{"LOWER": "unsafe"}, {"LOWER": "jni"}]}
-{"label": "secword", "pattern": [{"LOWER": "logic/time"}, {"LOWER": "bomb"}]}
-{"label": "secword", "pattern": [{"LOWER": "outofbounds"}, {"LOWER": "write"}]}
-{"label": "secword", "pattern": [{"LOWER": "violate"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "credentials"}]}
-{"label": "secword", "pattern": [{"LOWER": "circular"}, {"LOWER": "dependencies"}]}
-{"label": "secword", "pattern": [{"LOWER": "externally"}, {"LOWER": "controlled"}, {"LOWER": "format"}, {"LOWER": "string"}]}
-{"label": "secword", "pattern": [{"LOWER": "empty"}, {"LOWER": "code"}, {"LOWER": "block"}]}
-{"label": "secword", "pattern": [{"LOWER": "key"}]}
-{"label": "secword", "pattern": [{"LOWER": "evil"}, {"LOWER": "twin"}]}
-{"label": "secword", "pattern": [{"LOWER": "irrelevant"}, {"LOWER": "code"}]}
-{"label": "secword", "pattern": [{"LOWER": "openssl"}]}
-{"label": "secword", "pattern": [{"LOWER": "risky"}, {"LOWER": "values"}]}
-{"label": "secword", "pattern": [{"LOWER": "unverified"}, {"LOWER": "password"}, {"LOWER": "change"}]}
-{"label": "secword", "pattern": [{"LOWER": "locking"}, {"LOWER": "problems"}]}
-{"label": "secword", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "return"}, {"LOWER": "value"}]}
-{"label": "secword", "pattern": [{"LOWER": "mismatched"}, {"LOWER": "memory"}, {"LOWER": "management"}]}
-{"label": "secword", "pattern": [{"LOWER": "denial"}, {"LOWER": "of"}, {"LOWER": "service"}]}
-{"label": "secword", "pattern": [{"LOWER": "externally"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "controlled"}, {"LOWER": "format"}, {"LOWER": "string"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "cross"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "boundary"}, {"LOWER": "removal"}]}
-{"label": "secword", "pattern": [{"LOWER": "externally"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "generated"}, {"LOWER": "error"}, {"LOWER": "message"}]}
-{"label": "secword", "pattern": [{"LOWER": "redundant"}, {"LOWER": "code"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "complex"}]}
-{"label": "secword", "pattern": [{"LOWER": "inadequate"}, {"LOWER": "encryption"}]}
-{"label": "secword", "pattern": [{"LOWER": "type"}, {"LOWER": "confusion"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "link"}, {"LOWER": "resolution"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "encapsulation"}]}
-{"label": "secword", "pattern": [{"LOWER": "illegal"}, {"LOWER": "address"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "forgery"}]}
-{"label": "secword", "pattern": [{"LOWER": "xquery"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "invalid"}, {"LOWER": "memory"}, {"LOWER": "write"}]}
-{"label": "secword", "pattern": [{"LOWER": "path"}, {"LOWER": "manipulation"}]}
-{"label": "secword", "pattern": [{"LOWER": "weak"}, {"LOWER": "pseudo"}, {"LOWER": "random"}, {"LOWER": "number"}]}
-{"label": "secword", "pattern": [{"LOWER": "tls"}]}
-{"label": "secword", "pattern": [{"LOWER": "stack"}, {"LOWER": "based"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "unprotected"}, {"LOWER": "primary"}, {"LOWER": "channel"}]}
-{"label": "secword", "pattern": [{"LOWER": "salt"}]}
-{"label": "secword", "pattern": [{"LOWER": "phishing"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "exception"}, {"LOWER": "behavior"}]}
-{"label": "secword", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "algorithmic"}, {"LOWER": "complexity"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "byte"}, {"LOWER": "ordering"}]}
-{"label": "secword", "pattern": [{"LOWER": "input"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "audit"}]}
-{"label": "secword", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "resource"}, {"LOWER": "consumption"}]}
-{"label": "secword", "pattern": [{"LOWER": "encrypt"}]}
-{"label": "secword", "pattern": [{"LOWER": "signature"}]}
-{"label": "secword", "pattern": [{"LOWER": "oauth"}]}
-{"label": "secword", "pattern": [{"LOWER": "data"}, {"LOWER": "breach"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "encoding"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "bounds"}, {"LOWER": "read"}]}
-{"label": "secword", "pattern": [{"LOWER": "nonubiquitous"}, {"LOWER": "api"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "pointerdereference"}]}
-{"label": "secword", "pattern": [{"LOWER": "intrusion"}]}
-{"label": "secword", "pattern": [{"LOWER": "openssh"}]}
-{"label": "secword", "pattern": [{"LOWER": "ssh"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "search"}, {"LOWER": "path"}]}
-{"label": "secword", "pattern": [{"LOWER": "bomb"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "semantic"}, {"LOWER": "object"}, {"LOWER": "comparison"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "communications"}]}
-{"label": "secword", "pattern": [{"LOWER": "udp"}, {"LOWER": "flood"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "lock"}]}
-{"label": "secword", "pattern": [{"LOWER": "absolute"}, {"LOWER": "path"}, {"LOWER": "traversal"}]}
-{"label": "secword", "pattern": [{"LOWER": "premature"}, {"LOWER": "release"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}]}
-{"label": "secword", "pattern": [{"LOWER": "logic"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "login"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "identification"}]}
-{"label": "secword", "pattern": [{"LOWER": "sftp"}]}
-{"label": "secword", "pattern": [{"LOWER": "behavioral"}, {"LOWER": "inconsistency"}]}
-{"label": "secword", "pattern": [{"LOWER": "certificate"}, {"LOWER": "validity"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "implementation"}]}
-{"label": "secword", "pattern": [{"LOWER": "diffie"}, {"LOWER": "hellman"}]}
-{"label": "secword", "pattern": [{"LOWER": "hijacking"}]}
-{"label": "secword", "pattern": [{"LOWER": "mitm"}]}
-{"label": "secword", "pattern": [{"LOWER": "weak"}, {"LOWER": "cryptography"}]}
-{"label": "secword", "pattern": [{"LOWER": "guessable"}, {"LOWER": "captcha"}]}
-{"label": "secword", "pattern": [{"LOWER": "unauthorise"}]}
-{"label": "secword", "pattern": [{"LOWER": "inaccurate"}, {"LOWER": "comments"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "support"}]}
-{"label": "secword", "pattern": [{"LOWER": "virus"}]}
-{"label": "secword", "pattern": [{"LOWER": "nonce"}]}
-{"label": "secword", "pattern": [{"LOWER": "trapdoor"}]}
-{"label": "secword", "pattern": [{"LOWER": "secure"}, {"LOWER": "coding"}, {"LOWER": "standard"}]}
-{"label": "secword", "pattern": [{"LOWER": "buffer"}, {"LOWER": "over"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "read"}]}
-{"label": "secword", "pattern": [{"LOWER": "zero"}, {"LOWER": "day"}]}
-{"label": "secword", "pattern": [{"LOWER": "disclose"}]}
-{"label": "secword", "pattern": [{"LOWER": "escape"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "input"}]}
-{"label": "secword", "pattern": [{"LOWER": "os"}, {"LOWER": "command"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "documentation"}]}
-{"label": "secword", "pattern": [{"LOWER": "sanitizer"}]}
-{"label": "secword", "pattern": [{"LOWER": "multiple"}, {"LOWER": "unlocks"}]}
-{"label": "secword", "pattern": [{"LOWER": "pgp"}]}
-{"label": "secword", "pattern": [{"LOWER": "secur"}]}
-{"label": "secword", "pattern": [{"LOWER": "null"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "pointer"}, {"LOWER": "dereference"}]}
-{"label": "secword", "pattern": [{"LOWER": "code"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "http"}, {"LOWER": "proxy"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "compartmentalization"}]}
-{"label": "secword", "pattern": [{"LOWER": "session"}, {"LOWER": "fixation"}]}
-{"label": "secword", "pattern": [{"LOWER": "unconditional"}, {"LOWER": "control"}, {"LOWER": "flow"}]}
-{"label": "secword", "pattern": [{"LOWER": "command"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "platform"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "dependent"}, {"LOWER": "third"}, {"LOWER": "party"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "reference"}]}
-{"label": "secword", "pattern": [{"LOWER": "inappropriate"}, {"LOWER": "whitespace"}, {"LOWER": "style"}]}
-{"label": "secword", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "cpu"}, {"LOWER": "computation"}]}
-{"label": "secword", "pattern": [{"LOWER": "least"}, {"LOWER": "privilege"}, {"LOWER": "violation"}]}
-{"label": "secword", "pattern": [{"LOWER": "tainted"}]}
-{"label": "secword", "pattern": [{"LOWER": "unprotected"}, {"LOWER": "windows"}, {"LOWER": "messaging"}, {"LOWER": "channel"}]}
-{"label": "secword", "pattern": [{"LOWER": "response"}, {"LOWER": "discrepancy"}]}
-{"label": "secword", "pattern": [{"LOWER": "X.509"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "caller"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "synchronization"}]}
-{"label": "secword", "pattern": [{"LOWER": "unprotected"}, {"LOWER": "storage"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "authorization"}]}
-{"label": "secword", "pattern": [{"LOWER": "null"}, {"LOWER": "pointer"}, {"LOWER": "dereference"}]}
-{"label": "secword", "pattern": [{"LOWER": "user"}, {"LOWER": "account"}]}
-{"label": "secword", "pattern": [{"LOWER": "command"}, {"LOWER": "execution"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "certificate"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "check"}]}
-{"label": "secword", "pattern": [{"LOWER": "penetration"}, {"LOWER": "test"}]}
-{"label": "secword", "pattern": [{"LOWER": "x"}, {"LOWER": "509"}]}
-{"label": "secword", "pattern": [{"LOWER": "dsa"}]}
-{"label": "secword", "pattern": [{"LOWER": "unnecessary"}, {"LOWER": "privileges"}]}
-{"label": "secword", "pattern": [{"LOWER": "partial"}, {"LOWER": "string"}, {"LOWER": "comparison"}]}
-{"label": "secword", "pattern": [{"LOWER": "reversible"}, {"LOWER": "one"}, {"LOWER": "way"}, {"LOWER": "hash"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "string"}, {"LOWER": "expansion"}]}
-{"label": "secword", "pattern": [{"LOWER": "credential"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "logging"}]}
-{"label": "secword", "pattern": [{"LOWER": "ipsec"}]}
-{"label": "secword", "pattern": [{"LOWER": "protocol"}]}
-{"label": "secword", "pattern": [{"LOWER": "aes"}]}
-{"label": "secword", "pattern": [{"LOWER": "outside"}, {"LOWER": "bound"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "range"}, {"LOWER": "pointer"}, {"LOWER": "offset"}]}
-{"label": "secword", "pattern": [{"LOWER": "xml"}, {"LOWER": "flood"}]}
-{"label": "secword", "pattern": [{"LOWER": "rfc"}, {"LOWER": "2898"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "session"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "id"}, {"LOWER": "length"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "configuration"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "input"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "buffer"}, {"LOWER": "overflows"}]}
-{"label": "secword", "pattern": [{"LOWER": "malicious"}, {"LOWER": "code"}]}
-{"label": "secword", "pattern": [{"LOWER": "double"}, {"LOWER": "character"}, {"LOWER": "xss"}, {"LOWER": "manipulations"}]}
-{"label": "secword", "pattern": [{"LOWER": "auth"}]}
-{"label": "secword", "pattern": [{"LOWER": "sql"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "hack"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "type"}]}
-{"label": "secword", "pattern": [{"LOWER": "dangling"}, {"LOWER": "database"}, {"LOWER": "cursor"}]}
-{"label": "secword", "pattern": [{"LOWER": "data"}, {"LOWER": "exfiltration"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "automated"}, {"LOWER": "optimizations"}]}
-{"label": "secword", "pattern": [{"LOWER": "encode"}]}
-{"label": "secword", "pattern": [{"LOWER": "protection"}, {"LOWER": "mechanism"}, {"LOWER": "failure"}]}
-{"label": "secword", "pattern": [{"LOWER": "variable"}, {"LOWER": "extraction"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "path"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "non"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "ubiquitous"}, {"LOWER": "api"}]}
-{"label": "secword", "pattern": [{"LOWER": "buffer"}, {"LOWER": "over"}, {"LOWER": "read"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "synchronisation"}]}
-{"label": "secword", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "cryptographic"}]}
-{"label": "secword", "pattern": [{"LOWER": "business"}, {"LOWER": "logic"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "privilege"}, {"LOWER": "escalation"}]}
-{"label": "secword", "pattern": [{"LOWER": "trust"}]}
-{"label": "secword", "pattern": [{"LOWER": "cpe"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "address"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "information"}, {"LOWER": "leakage"}]}
-{"label": "secword", "pattern": [{"LOWER": "privacy"}]}
-{"label": "secword", "pattern": [{"LOWER": "inappropriate"}, {"LOWER": "encoding"}]}
-{"label": "secword", "pattern": [{"LOWER": "risky"}, {"LOWER": "resource"}, {"LOWER": "management"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "password"}]}
-{"label": "secword", "pattern": [{"LOWER": "eval"}]}
-{"label": "secword", "pattern": [{"LOWER": "sanitise"}]}
-{"label": "secword", "pattern": [{"LOWER": "attack"}]}
-{"label": "secword", "pattern": [{"LOWER": "information"}, {"LOWER": "leak"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "transport"}, {"LOWER": "layer"}, {"LOWER": "protection"}]}
-{"label": "secword", "pattern": [{"LOWER": "safe"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "buffer"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "lock"}, {"LOWER": "check"}]}
-{"label": "secword", "pattern": [{"LOWER": "permission"}, {"LOWER": "race"}, {"LOWER": "condition"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "protection"}]}
-{"label": "secword", "pattern": [{"LOWER": "exploit"}]}
-{"label": "secword", "pattern": [{"LOWER": "pathname"}, {"LOWER": "traversal"}]}
-{"label": "secword", "pattern": [{"LOWER": "open"}, {"LOWER": "redirect"}]}
-{"label": "secword", "pattern": [{"LOWER": "duplicate"}, {"LOWER": "validation"}]}
-{"label": "secword", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "cryptographic"}, {"LOWER": "key"}]}
-{"label": "secword", "pattern": [{"LOWER": "key"}, {"LOWER": "management"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "configuration"}, {"LOWER": "management"}]}
-{"label": "secword", "pattern": [{"LOWER": "wrap"}, {"LOWER": "around"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "injection"}, {"LOWER": "flaws"}]}
-{"label": "secword", "pattern": [{"LOWER": "fraud"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "resolution"}]}
-{"label": "secword", "pattern": [{"LOWER": "poison"}, {"LOWER": "null"}, {"LOWER": "byte"}]}
-{"label": "secword", "pattern": [{"LOWER": "breach"}]}
-{"label": "secword", "pattern": [{"LOWER": "content"}, {"LOWER": "security"}, {"LOWER": "policy"}]}
-{"label": "secword", "pattern": [{"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "inherited"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "adherence"}]}
-{"label": "secword", "pattern": [{"LOWER": "null"}, {"LOWER": "byte"}, {"LOWER": "interaction"}]}
-{"label": "secword", "pattern": [{"LOWER": "uninitalized"}, {"LOWER": "memory"}]}
-{"label": "secword", "pattern": [{"LOWER": "vulnerability"}]}
-{"label": "secword", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "server"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "side"}, {"LOWER": "data"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "npe"}, {"LOWER": "issue"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "error"}, {"LOWER": "handling"}]}
-{"label": "secword", "pattern": [{"LOWER": "defensive"}, {"LOWER": "programming"}]}
-{"label": "secword", "pattern": [{"LOWER": "man"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "in"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "the"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "middle"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "following"}]}
-{"label": "secword", "pattern": [{"LOWER": "containment"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "access"}, {"LOWER": "control"}]}
-{"label": "secword", "pattern": [{"LOWER": "mobile"}, {"LOWER": "code"}, {"LOWER": "issues"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "cryptographic"}, {"LOWER": "key"}]}
-{"label": "secword", "pattern": [{"LOWER": "crosssite"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
-{"label": "secword", "pattern": [{"LOWER": "back"}, {"LOWER": "door"}]}
-{"label": "secword", "pattern": [{"LOWER": "double"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "checked"}, {"LOWER": "locking"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "data"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "short"}, {"LOWER": "circuit"}, {"LOWER": "evaluation"}]}
-{"label": "secword", "pattern": [{"LOWER": "ssl"}, {"LOWER": "flood"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "conversion"}]}
-{"label": "secword", "pattern": [{"LOWER": "web"}, {"LOWER": "problems"}]}
-{"label": "secword", "pattern": [{"LOWER": "steal"}]}
-{"label": "secword", "pattern": [{"LOWER": "ssh"}, {"LOWER": "key"}]}
-{"label": "secword", "pattern": [{"LOWER": "hsm"}]}
-{"label": "secword", "pattern": [{"LOWER": "serverside"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
-{"label": "secword", "pattern": [{"LOWER": "logic"}, {"LOWER": "bomb"}]}
-{"label": "secword", "pattern": [{"LOWER": "cloudflare"}]}
-{"label": "secword", "pattern": [{"LOWER": "weak"}, {"LOWER": "access"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "unexpected"}, {"LOWER": "entry"}, {"LOWER": "points"}]}
-{"label": "secword", "pattern": [{"LOWER": "extraneous"}, {"LOWER": "untrusted"}, {"LOWER": "data"}]}
-{"label": "secword", "pattern": [{"LOWER": "off"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "by"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "one"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "saml"}]}
-{"label": "secword", "pattern": [{"LOWER": "xss"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "user"}, {"LOWER": "management"}]}
-{"label": "secword", "pattern": [{"LOWER": "ecdsa"}]}
-{"label": "secword", "pattern": [{"LOWER": "hash"}]}
-{"label": "secword", "pattern": [{"LOWER": "unexpected"}, {"LOWER": "sign"}, {"LOWER": "extension"}]}
-{"label": "secword", "pattern": [{"LOWER": "wrap"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "around"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "memory"}, {"LOWER": "leak"}]}
-{"label": "secword", "pattern": [{"LOWER": "dynamic"}, {"LOWER": "variable"}, {"LOWER": "evaluation"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "code"}, {"LOWER": "complexity"}]}
-{"label": "secword", "pattern": [{"LOWER": "invalid"}, {"LOWER": "pointer"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "iteration"}]}
-{"label": "secword", "pattern": [{"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "nessus"}]}
-{"label": "secword", "pattern": [{"LOWER": "tunnelling"}]}
-{"label": "secword", "pattern": [{"LOWER": "memory"}, {"LOWER": "corruption"}]}
-{"label": "secword", "pattern": [{"LOWER": "worm"}]}
-{"label": "secword", "pattern": [{"LOWER": "object"}, {"LOWER": "model"}, {"LOWER": "violation"}]}
-{"label": "secword", "pattern": [{"LOWER": "suspicious"}, {"LOWER": "comment"}]}
-{"label": "secword", "pattern": [{"LOWER": "poison"}]}
-{"label": "secword", "pattern": [{"LOWER": "unquoted"}, {"LOWER": "search"}, {"LOWER": "path"}]}
-{"label": "secword", "pattern": [{"LOWER": "rc4"}]}
-{"label": "secword", "pattern": [{"LOWER": "shatter"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "preservation"}]}
-{"label": "secword", "pattern": [{"LOWER": "write"}, {"LOWER": "what"}, {"LOWER": "where"}, {"LOWER": "condition"}]}
-{"label": "secword", "pattern": [{"LOWER": "shib"}, {"LOWER": "boleth"}]}
-{"label": "secword", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "pointer"}, {"LOWER": "dereference"}]}
-{"label": "secword", "pattern": [{"LOWER": "http"}, {"LOWER": "response"}, {"LOWER": "splitting"}]}
-{"label": "secword", "pattern": [{"LOWER": "authorization"}, {"LOWER": "bypass"}]}
-{"label": "secword", "pattern": [{"LOWER": "origin"}, {"LOWER": "validation"}, {"LOWER": "error"}]}
-{"label": "secword", "pattern": [{"LOWER": "server"}, {"LOWER": "side"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "check"}]}
-{"label": "secword", "pattern": [{"LOWER": "base64_encode"}]}
-{"label": "secword", "pattern": [{"LOWER": "sanitization"}]}
-{"label": "secword", "pattern": [{"LOWER": "trusted"}, {"LOWER": "resource"}, {"LOWER": "url"}]}
-{"label": "secword", "pattern": [{"LOWER": "man"}, {"LOWER": "in"}, {"LOWER": "middle"}]}
-{"label": "secword", "pattern": [{"LOWER": "nullptr"}, {"LOWER": "exception"}]}
-{"label": "secword", "pattern": [{"LOWER": "faulty"}, {"LOWER": "buffer"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "serverside"}, {"LOWER": "data"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "relative"}, {"LOWER": "path"}, {"LOWER": "traversal"}]}
-{"label": "secword", "pattern": [{"LOWER": "leak"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "range"}, {"LOWER": "pointer"}]}
-{"label": "secword", "pattern": [{"LOWER": "always"}, {"LOWER": "incorrect"}, {"LOWER": "control"}, {"LOWER": "flow"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "permission"}, {"LOWER": "assignment"}]}
-{"label": "secword", "pattern": [{"LOWER": "excessive"}, {"LOWER": "execution"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "cryptographic"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "range"}, {"LOWER": "pointer"}]}
-{"label": "secword", "pattern": [{"LOWER": "transport"}]}
-{"label": "secword", "pattern": [{"LOWER": "covert"}, {"LOWER": "storage"}, {"LOWER": "channel"}]}
-{"label": "secword", "pattern": [{"LOWER": "information"}, {"LOWER": "loss"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "resource"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "stackbased"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "sanity"}, {"LOWER": "check"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "handler"}]}
-{"label": "secword", "pattern": [{"LOWER": "ssl"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "computational"}, {"LOWER": "effort"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "preserved"}, {"LOWER": "inherited"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "pointer"}, {"LOWER": "scaling"}]}
-{"label": "secword", "pattern": [{"LOWER": "information"}, {"LOWER": "management"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "null"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "pointer"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "cross"}, {"LOWER": "site"}, {"LOWER": "scripting"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "calculation"}]}
-{"label": "secword", "pattern": [{"LOWER": "cryptanalysis"}]}
-{"label": "secword", "pattern": [{"LOWER": "bitlocker"}]}
-{"label": "secword", "pattern": [{"LOWER": "security"}, {"LOWER": "misconfiguration"}]}
-{"label": "secword", "pattern": [{"LOWER": "deadlock"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "authentication"}, {"LOWER": "policy"}]}
-{"label": "secword", "pattern": [{"LOWER": "attack"}, {"LOWER": "surface"}]}
-{"label": "secword", "pattern": [{"LOWER": "inadequate"}, {"LOWER": "detection"}]}
-{"label": "secword", "pattern": [{"LOWER": "malicious"}, {"LOWER": "file"}, {"LOWER": "execution"}]}
-{"label": "secword", "pattern": [{"LOWER": "bad"}, {"LOWER": "practices"}]}
-{"label": "secword", "pattern": [{"LOWER": "remote"}, {"LOWER": "file"}, {"LOWER": "inclusion"}]}
-{"label": "secword", "pattern": [{"LOWER": "unreachable"}, {"LOWER": "exit"}]}
-{"label": "secword", "pattern": [{"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "missing"}, {"LOWER": "default"}, {"LOWER": "case"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrectly"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "resolved"}, {"LOWER": "name"}]}
-{"label": "secword", "pattern": [{"LOWER": "dangerous"}, {"LOWER": "function"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "group"}]}
-{"label": "secword", "pattern": [{"LOWER": "attack"}, {"LOWER": "vector"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "argument"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "weak"}, {"LOWER": "pseudo"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "random"}, {"LOWER": "number"}]}
-{"label": "secword", "pattern": [{"LOWER": "sandbox"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "verification"}]}
-{"label": "secword", "pattern": [{"LOWER": "less"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "secure"}, {"LOWER": "algorithm"}]}
-{"label": "secword", "pattern": [{"LOWER": "xml"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "integer"}, {"LOWER": "underflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "cleartext"}, {"LOWER": "storage"}]}
-{"label": "secword", "pattern": [{"LOWER": "escrow"}]}
-{"label": "secword", "pattern": [{"LOWER": "crypt"}]}
-{"label": "secword", "pattern": [{"LOWER": "use"}, {"LOWER": "after"}, {"LOWER": "free"}]}
-{"label": "secword", "pattern": [{"LOWER": "server"}]}
-{"label": "secword", "pattern": [{"LOWER": "wrong"}, {"LOWER": "status"}, {"LOWER": "code"}]}
-{"label": "secword", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "network"}, {"LOWER": "resource"}, {"LOWER": "configuration"}]}
-{"label": "secword", "pattern": [{"LOWER": "cwe"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "biometric"}]}
-{"label": "secword", "pattern": [{"LOWER": "duplicate"}, {"LOWER": "identifier"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "synchronisation"}]}
-{"label": "secword", "pattern": [{"LOWER": "sax"}]}
-{"label": "secword", "pattern": [{"LOWER": "pci"}, {"LOWER": "dss"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "output"}, {"LOWER": "neutralization"}]}
-{"label": "secword", "pattern": [{"LOWER": "toctou"}]}
-{"label": "secword", "pattern": [{"LOWER": "unvalidated"}, {"LOWER": "action"}, {"LOWER": "form"}]}
-{"label": "secword", "pattern": [{"LOWER": "asymmetric"}, {"LOWER": "resource"}, {"LOWER": "consumption"}]}
-{"label": "secword", "pattern": [{"LOWER": "blind"}, {"LOWER": "xpath"}, {"LOWER": "injection"}]}
-{"label": "secword", "pattern": [{"LOWER": "integer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "symlink"}]}
-{"label": "secword", "pattern": [{"LOWER": "sanitize"}]}
-{"label": "secword", "pattern": [{"LOWER": "intruder"}]}
-{"label": "secword", "pattern": [{"LOWER": "tainted"}, {"LOWER": "input"}]}
-{"label": "secword", "pattern": [{"LOWER": "data"}, {"LOWER": "exfiltrate"}]}
-{"label": "secword", "pattern": [{"LOWER": "crack"}]}
-{"label": "secword", "pattern": [{"LOWER": "failure"}, {"LOWER": "to"}, {"LOWER": "restrict"}, {"LOWER": "url"}, {"LOWER": "access"}]}
-{"label": "secword", "pattern": [{"LOWER": "externally"}, {"LOWER": "generated"}, {"LOWER": "error"}, {"LOWER": "message"}]}
-{"label": "secword", "pattern": [{"LOWER": "improper"}, {"LOWER": "update"}]}
-{"label": "secword", "pattern": [{"LOWER": "scam"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "double"}, {"LOWER": "decoding"}]}
-{"label": "secword", "pattern": [{"LOWER": "bypass"}]}
-{"label": "secword", "pattern": [{"LOWER": "resource"}, {"LOWER": "locking"}, {"LOWER": "problems"}]}
-{"label": "secword", "pattern": [{"LOWER": "security"}]}
-{"label": "secword", "pattern": [{"LOWER": "single"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "factor"}, {"LOWER": "authentication"}]}
-{"label": "secword", "pattern": [{"LOWER": "nonserializable"}, {"LOWER": "object"}, {"LOWER": "stored"}]}
-{"label": "secword", "pattern": [{"LOWER": "buffer"}, {"LOWER": "overflow"}]}
-{"label": "secword", "pattern": [{"LOWER": "dmz"}]}
-{"label": "secword", "pattern": [{"LOWER": "zombie"}, {"LOWER": "computer"}]}
-{"label": "secword", "pattern": [{"LOWER": "insecure"}]}
-{"label": "secword", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "bounds"}]}
-{"label": "secword", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "execution"}, {"LOWER": "assigned"}, {"LOWER": "permissions"}]}
-{"label": "secword", "pattern": [{"LOWER": "exposed"}, {"LOWER": "data"}]}
-{"label": "secword", "pattern": [{"LOWER": "representation"}, {"LOWER": "errors"}]}
-{"label": "secword", "pattern": [{"LOWER": "malware"}]}
-{"label": "secword", "pattern": [{"LOWER": "decode"}]}
-{"label": "secword", "pattern": [{"LOWER": "md5"}]}
-{"label": "secword", "pattern": [{"LOWER": "availability"}]}
-{"label": "secword", "pattern": [{"LOWER": "unnecessary"}, {"LOWER": "complexity"}]}
-{"label": "secword", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "i/o"}, {"LOWER": "documentation"}]}
-{"label": "secword", "pattern": [{"LOWER": "xxe"}]}
-{"label": "secword", "pattern": [{"LOWER": "buffer"}, {"LOWER": "under"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "read"}]}
-{"label": "secword", "pattern": [{"LOWER": "capec"}]}
-{"label": "secword", "pattern": [{"LOWER": "safe"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "attack"}, {"LOWER": "surface"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "expired"}, {"LOWER": "pointer"}, {"LOWER": "dereference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "permissive"}, {"LOWER": "regular"}, {"LOWER": "expression"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "forced"}, {"LOWER": "browsing"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "temporary"}, {"LOWER": "file"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "credentials"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "input"}, {"LOWER": "validation"}, {"LOWER": "problems"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "heap"}, {"LOWER": "corruption"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "steganography"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unsynchronized"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "privilege"}, {"LOWER": "management"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "division"}, {"LOWER": "by"}, {"LOWER": "0"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "precedence"}, {"LOWER": "logic"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "address"}, {"LOWER": "length"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "numeric"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "coding"}, {"LOWER": "standard"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "rainbow"}, {"LOWER": "table"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "network"}, {"LOWER": "resource"}, {"LOWER": "configuration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "non"}, {"LOWER": "ubiquitous"}, {"LOWER": "api"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inconsistent"}, {"LOWER": "naming"}, {"LOWER": "conventions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "spoof"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "confidential"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "input"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "glitch"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "owasp"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "illegitimate"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "symlink"}, {"LOWER": "following"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sensitiveinformation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "pbkdf2"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "index"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "weak"}, {"LOWER": "password"}, {"LOWER": "recovery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "open"}, {"LOWER": "auth"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "validate"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "machine"}, {"LOWER": "dependent"}, {"LOWER": "data"}, {"LOWER": "representation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "remote"}, {"LOWER": "code"}, {"LOWER": "execution"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "race"}, {"LOWER": "condition"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "target"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "comparison"}, {"LOWER": "using"}, {"LOWER": "wrong"}, {"LOWER": "factors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "openid"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "format"}, {"LOWER": "string"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "type"}, {"LOWER": "safety"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "known"}, {"LOWER": "vulnerabilities"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "concurrency"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "length"}, {"LOWER": "value"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "resource"}, {"LOWER": "shutdown"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "network"}, {"LOWER": "resource"}, {"LOWER": "configuration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "malformed"}, {"LOWER": "url"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "proxy"}, {"LOWER": "header"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "scripting"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "predictability"}, {"LOWER": "problems"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "trojan"}, {"LOWER": "horse"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "cleanup"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "reliance"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "usage"}, {"LOWER": "permission"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "adversarial"}, {"LOWER": "input"}, {"LOWER": "perturbations"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "access"}, {"LOWER": "control"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "model"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "mccabe"}, {"LOWER": "cyclomatic"}, {"LOWER": "complexity"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "cryptographic"}, {"LOWER": "storage"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "off"}, {"LOWER": "by"}, {"LOWER": "one"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "spyware"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "file"}, {"LOWER": "descriptor"}, {"LOWER": "consumption"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "expression"}, {"LOWER": "language"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ip"}, {"LOWER": "spoofing"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "buffer"}, {"LOWER": "underwrite"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "crlf"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "expression"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "authentication"}, {"LOWER": "bypass"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dos"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "eavesdropping"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "initialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incompatible"}, {"LOWER": "types"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "forge"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "control"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "password"}, {"LOWER": "field"}, {"LOWER": "masking"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unvalidated"}, {"LOWER": "input"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "use"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unused"}, {"LOWER": "validation"}, {"LOWER": "form"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "signal"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "external"}, {"LOWER": "behavioral"}, {"LOWER": "inconsistency"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "locking"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "miscalculated"}, {"LOWER": "null"}, {"LOWER": "termination"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "file"}, {"LOWER": "permission"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incompatible"}, {"LOWER": "type"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "empty"}, {"LOWER": "exception"}, {"LOWER": "block"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "range"}, {"LOWER": "pointer"}, {"LOWER": "offset"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "sanitization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "buffer"}, {"LOWER": "length"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "execution"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "assigned"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "json"}, {"LOWER": "serialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "blacklist"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bounds"}, {"LOWER": "write"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "scriptkiddie"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "broken"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cipher"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "spnego"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "initialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "data"}, {"LOWER": "exposure"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "http"}, {"LOWER": "flood"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unreachable"}, {"LOWER": "exit"}, {"LOWER": "condition"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "memory"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "signing"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "management"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "interface"}, {"LOWER": "security"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "use"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "after"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "free"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "weak"}, {"LOWER": "password"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "file"}, {"LOWER": "descriptor"}, {"LOWER": "leak"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "secure"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "misrepresentation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "ownership"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "flaws"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "adversarial"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "check"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "double"}, {"LOWER": "free"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "restrictive"}, {"LOWER": "regular"}, {"LOWER": "expression"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "adherence"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "release"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "password"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "duplicate"}, {"LOWER": "validation"}, {"LOWER": "forms"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unprotected"}, {"LOWER": "alternate"}, {"LOWER": "channel"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "bounds"}, {"LOWER": "write"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xml"}, {"LOWER": "entity"}, {"LOWER": "expansion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bounds"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "php"}, {"LOWER": "remote"}, {"LOWER": "file"}, {"LOWER": "inclusion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "white"}, {"LOWER": "list"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "asp.net"}, {"LOWER": "misconfiguration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "segfault"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "site"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "permission"}, {"LOWER": "escalation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "resource"}, {"LOWER": "transfer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"LOWER": "link"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "authorization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "buffer"}, {"LOWER": "length"}, {"LOWER": "computation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "protect"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "data"}, {"LOWER": "query"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "heap"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "based"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inject"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "top"}, {"LOWER": "syn"}, {"LOWER": "flood"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "control"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "exposed"}, {"LOWER": "dangerous"}, {"LOWER": "method"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "privileges"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "scope"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unsafe"}, {"LOWER": "reflection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "access"}, {"LOWER": "role"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "meterpreter"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unrestricted"}, {"LOWER": "upload"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "serialization"}, {"LOWER": "control"}, {"LOWER": "element"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "communication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "user"}, {"LOWER": "interface"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "firewall"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "synchronisation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "block"}, {"LOWER": "delimitation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "platform"}, {"LOWER": "dependent"}, {"LOWER": "third"}, {"LOWER": "party"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cross"}, {"LOWER": "cutting"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "static"}, {"LOWER": "code"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "type"}, {"LOWER": "conversion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "authentication"}, {"LOWER": "attempts"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unintended"}, {"LOWER": "proxy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "outofbounds"}, {"LOWER": "read"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "wrong"}, {"LOWER": "handler"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cryptographic"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "null"}, {"LOWER": "pointer"}, {"LOWER": "exception"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "timing"}, {"LOWER": "discrepancy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "confused"}, {"LOWER": "deputy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "path"}, {"LOWER": "traversal"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cbc"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "non"}, {"LOWER": "serializable"}, {"LOWER": "object"}, {"LOWER": "stored"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "handler"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "data"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "privilege"}, {"LOWER": "assignment"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "non"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "serializable"}, {"LOWER": "object"}, {"LOWER": "stored"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "asset"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "common"}, {"LOWER": "weakness"}, {"LOWER": "enumeration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "spam"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "peidss"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cookie"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "data"}, {"LOWER": "structure"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dead"}, {"LOWER": "code"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "information"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "literals"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "buffer"}, {"LOWER": "underflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "order"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "fuzz"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "adware"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "validation"}, {"LOWER": "problems"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "limitation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uninitialized"}, {"LOWER": "resource"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "plaintext"}, {"LOWER": "password"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unmaintained"}, {"LOWER": "third"}, {"LOWER": "party"}, {"LOWER": "components"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xml"}, {"LOWER": "external"}, {"LOWER": "entities"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "heap"}, {"LOWER": "based"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrectly"}, {"LOWER": "resolved"}, {"LOWER": "name"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "handling"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "control"}, {"LOWER": "flow"}, {"LOWER": "scoping"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "endpoint"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "input"}, {"LOWER": "transformation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "documentation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "size"}, {"LOWER": "check"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "honey"}, {"LOWER": "pot"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bound"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "cross"}, {"LOWER": "boundary"}, {"LOWER": "removal"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "prototype"}, {"LOWER": "pollution"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "write"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "what"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "where"}, {"LOWER": "condition"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "less"}, {"LOWER": "secure"}, {"LOWER": "algorithm"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "burp"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "csrf"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "authorization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "single"}, {"LOWER": "sign"}, {"LOWER": "on"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "data"}, {"LOWER": "exposure"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "reversible"}, {"LOWER": "oneway"}, {"LOWER": "hash"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "enforcement"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "underflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "server"}, {"LOWER": "side"}, {"LOWER": "data"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "design"}, {"LOWER": "documentation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "rsa"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unmaintained"}, {"LOWER": "third"}, {"LOWER": "party"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "crypto"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "sensitive"}, {"LOWER": "data"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "encryption"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "pointer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "nvd"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "cleanup"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unparsed"}, {"LOWER": "raw"}, {"LOWER": "web"}, {"LOWER": "content"}, {"LOWER": "delivery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "ownership"}, {"LOWER": "assignment"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inconsistent"}, {"LOWER": "interpretation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "rootkit"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "type"}, {"LOWER": "distinction"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "rbac"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "documentation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "comparison"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "single"}, {"LOWER": "factor"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "failed"}, {"LOWER": "chroot"}, {"LOWER": "jail"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ssrf"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "comparison"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "server"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "side"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "length"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "initialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "invalid"}, {"LOWER": "memory"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "spoofing"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "theft"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "clickjacking"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "operator"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "time"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "check"}, {"LOWER": "time"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "use"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "botnet"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "object"}, {"LOWER": "hijack"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "saving"}, {"LOWER": "unserializable"}, {"LOWER": "objects"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "default"}, {"LOWER": "initialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "default"}, {"LOWER": "variable"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "file"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "threads"}, {"LOWER": "locked"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ldap"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "endpoint"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "resource"}, {"LOWER": "pool"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "privilege"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "inputs"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cisq"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "directory"}, {"LOWER": "traversal"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inadequate"}, {"LOWER": "encryption"}, {"LOWER": "strength"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "session"}, {"LOWER": "management"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "crosssite"}, {"LOWER": "scripting"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ransomware"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "cryptographic"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "isolation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "neutralization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "man"}, {"LOWER": "in"}, {"LOWER": "the"}, {"LOWER": "middle"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uncaught"}, {"LOWER": "exception"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "malicious"}, {"LOWER": "file"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "usage"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inconsistent"}, {"LOWER": "naming"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "misconfiguration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "array"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "fingerprint"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "trust"}, {"LOWER": "boundary"}, {"LOWER": "violation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "processing"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "machine"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "dependent"}, {"LOWER": "data"}, {"LOWER": "representation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "critical"}, {"LOWER": "step"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "heapbased"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "filtering"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "metasploit"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "function"}, {"LOWER": "level"}, {"LOWER": "access"}, {"LOWER": "control"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "deserialisation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "doublechecked"}, {"LOWER": "locking"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "file"}, {"LOWER": "integrity"}, {"LOWER": "check"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hmac"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dotfuscator"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "j2ee"}, {"LOWER": "misconfiguration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "broken"}, {"LOWER": "access"}, {"LOWER": "control"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "risky"}, {"LOWER": "cryptographic"}, {"LOWER": "algorithm"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "empty"}, {"LOWER": "password"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "identity"}, {"LOWER": "impersonation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "crc"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "deep"}, {"LOWER": "nesting"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "smart"}, {"LOWER": "assembly"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "model"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "defense"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "resource"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "always"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "incorrect"}, {"LOWER": "control"}, {"LOWER": "flow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "pointer"}, {"LOWER": "dereference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "poisoning"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "channel"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "defence"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "malicious"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "singlefactor"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hidden"}, {"LOWER": "functionality"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "timeofcheck"}, {"LOWER": "timeofuse"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "permissive"}, {"LOWER": "whitelist"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "empty"}, {"LOWER": "exception"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "session"}, {"LOWER": "expiration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "self"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "generated"}, {"LOWER": "error"}, {"LOWER": "message"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "required"}, {"LOWER": "cryptographic"}, {"LOWER": "step"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "disclosure"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "privacy"}, {"LOWER": "violation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "privilege"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "source"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "jndi"}, {"LOWER": "lookup"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "behavior"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "verification"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "resource"}, {"LOWER": "leak"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "cryptographic"}, {"LOWER": "key"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "filtering"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "weak"}, {"LOWER": "pseudorandom"}, {"LOWER": "number"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xml"}, {"LOWER": "external"}, {"LOWER": "entity"}, {"LOWER": "reference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "cookie"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "shell"}, {"LOWER": "code"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xxe"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unrestricted"}, {"LOWER": "lock"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "synchronization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "gss"}, {"LOWER": "api"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "public"}, {"LOWER": "key"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "behavioral"}, {"LOWER": "summary"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "memory"}, {"LOWER": "allocation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "null"}, {"LOWER": "termination"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hardcoded"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "data"}, {"LOWER": "sanitization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cross"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "site"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "literals"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "remote"}, {"LOWER": "execute"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "default"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "weakness"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "report"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "kerberos"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "credentials"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "delegation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "storage"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "porous"}, {"LOWER": "defenses"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "control"}, {"LOWER": "sphere"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "secure"}, {"LOWER": "coding"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "path"}, {"LOWER": "equivalence"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "time"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "check"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "tunneling"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "escaping"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "privilege"}, {"LOWER": "context"}, {"LOWER": "switching"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "honeypot"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unvalidated"}, {"LOWER": "redirects"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "threat"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "pen"}, {"LOWER": "test"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "buffer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "algorithm"}, {"LOWER": "downgrade"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "tampering"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "data"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "password"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bounds"}, {"LOWER": "read"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unintended"}, {"LOWER": "intermediary"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "overflows"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unsafe"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "literals"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unrestricted"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sensitive"}, {"LOWER": "information"}, {"LOWER": "uncleared"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "buffer"}, {"LOWER": "under"}, {"LOWER": "read"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "neutralisation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "two"}, {"LOWER": "factor"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "restrictive"}, {"LOWER": "account"}, {"LOWER": "lockout"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "captcha"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "obfuscate"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "blacklist"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "repudiation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cve"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "pointer"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "self"}, {"LOWER": "generated"}, {"LOWER": "error"}, {"LOWER": "message"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "http"}, {"LOWER": "parameter"}, {"LOWER": "pollution"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "password"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "warnings"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "xml"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "bad"}, {"LOWER": "coding"}, {"LOWER": "practices"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "outofbounds"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "external"}, {"LOWER": "entity"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "bound"}, {"LOWER": "write"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "method"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "doubled"}, {"LOWER": "character"}, {"LOWER": "xss"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "standardized"}, {"LOWER": "error"}, {"LOWER": "handling"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cleanup"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "serialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "http"}, {"LOWER": "request"}, {"LOWER": "smuggling"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "multiple"}, {"LOWER": "locks"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "search"}, {"LOWER": "path"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "reversible"}, {"LOWER": "one"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "way"}, {"LOWER": "hash"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "0"}, {"LOWER": "day"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dot"}, {"LOWER": "dot"}, {"LOWER": "slash"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "conversion"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "special"}, {"LOWER": "element"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "entropy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "default"}, {"LOWER": "variable"}, {"LOWER": "initialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "resource"}, {"LOWER": "management"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "certificate"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "use"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ddos"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inconsistent"}, {"LOWER": "implementations"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cross"}, {"LOWER": "site"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sso"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "recursion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "time"}, {"LOWER": "bomb"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uninitialized"}, {"LOWER": "pointer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "reflection"}, {"LOWER": "attack"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "control"}, {"LOWER": "flow"}, {"LOWER": "management"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "intentional"}, {"LOWER": "information"}, {"LOWER": "exposure"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "data"}, {"LOWER": "processing"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "null"}, {"LOWER": "byte"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "antivirus"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inappropriate"}, {"LOWER": "comment"}, {"LOWER": "style"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sanitizing"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "synchronization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ctf"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ldap"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unrestricted"}, {"LOWER": "consumption"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "authorise"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "vulnerabilities"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unauthorized"}, {"LOWER": "control"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "generic"}, {"LOWER": "exception"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "infinite"}, {"LOWER": "loop"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "restriction"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "capture"}, {"LOWER": "the"}, {"LOWER": "flag"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "bound"}, {"LOWER": "read"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "permission"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "neutralization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "empty"}, {"LOWER": "synchronized"}, {"LOWER": "block"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xpath"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "smartassembly"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cursor"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "direct"}, {"LOWER": "object"}, {"LOWER": "reference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "nss"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "session"}, {"LOWER": "id"}, {"LOWER": "length"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xml"}, {"LOWER": "bomb"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "trojan"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "information"}, {"LOWER": "exposure"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "classic"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "time"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "use"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "type"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "deserialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "internal"}, {"LOWER": "state"}, {"LOWER": "distinction"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "validate"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "ownership"}, {"LOWER": "management"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "clearing"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dangerous"}, {"LOWER": "method"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cross"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "site"}, {"LOWER": "scripting"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "encoding"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "broken"}, {"LOWER": "cryptography"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "behavioral"}, {"LOWER": "problems"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "integer"}, {"LOWER": "coercion"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "resource"}, {"LOWER": "locking"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "custom"}, {"LOWER": "error"}, {"LOWER": "page"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "status"}, {"LOWER": "condition"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unexpected"}, {"LOWER": "status"}, {"LOWER": "code"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "provision"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dangerous"}, {"LOWER": "operations"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "alternate"}, {"LOWER": "xss"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "element"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "sessionid"}, {"LOWER": "length"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "integrity"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cross"}, {"LOWER": "site"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "resource"}, {"LOWER": "use"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "failing"}, {"LOWER": "open"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "top"}, {"LOWER": "flood"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "deserialization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "clickfraud"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "use"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "leftover"}, {"LOWER": "debug"}, {"LOWER": "code"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "user"}, {"LOWER": "name"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unsigned"}, {"LOWER": "conversion"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "cryptographic"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "checksum"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "string"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "interaction"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "early"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "memory"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unsafe"}, {"LOWER": "value"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "memory"}, {"LOWER": "release"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "regular"}, {"LOWER": "expression"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "common"}, {"LOWER": "platform"}, {"LOWER": "enumeration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "protection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "danger"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "interpretation"}, {"LOWER": "conflict"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "temporary"}, {"LOWER": "file"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "pointer"}, {"LOWER": "use"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "permission"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "container"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "time"}, {"LOWER": "of"}, {"LOWER": "check"}, {"LOWER": "time"}, {"LOWER": "of"}, {"LOWER": "use"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hijack"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "error"}, {"LOWER": "condition"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "input"}, {"LOWER": "handling"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "default"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "rijndael"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sha"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "behavior"}, {"LOWER": "order"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "pki"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "private"}, {"LOWER": "key"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "signed"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "halstead"}, {"LOWER": "complexity"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "trap"}, {"LOWER": "door"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unauthorized"}, {"LOWER": "control"}, {"LOWER": "sphere"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "signed"}, {"LOWER": "conversion"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "comparison"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "openvas"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ambiguous"}, {"LOWER": "exception"}, {"LOWER": "type"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "eval"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "stack"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "based"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "interaction"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "psychological"}, {"LOWER": "acceptability"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "authority"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "clearance"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "gnupg"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "predictable"}, {"LOWER": "salt"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "access"}, {"LOWER": "control"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "double"}, {"LOWER": "checked"}, {"LOWER": "locking"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "snif"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unsafe"}, {"LOWER": "jni"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "logic/time"}, {"LOWER": "bomb"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "outofbounds"}, {"LOWER": "write"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "violate"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "credentials"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "circular"}, {"LOWER": "dependencies"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "externally"}, {"LOWER": "controlled"}, {"LOWER": "format"}, {"LOWER": "string"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "empty"}, {"LOWER": "code"}, {"LOWER": "block"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "key"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "evil"}, {"LOWER": "twin"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "irrelevant"}, {"LOWER": "code"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "openssl"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "risky"}, {"LOWER": "values"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unverified"}, {"LOWER": "password"}, {"LOWER": "change"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "locking"}, {"LOWER": "problems"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unchecked"}, {"LOWER": "return"}, {"LOWER": "value"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "mismatched"}, {"LOWER": "memory"}, {"LOWER": "management"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "denial"}, {"LOWER": "of"}, {"LOWER": "service"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "externally"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "controlled"}, {"LOWER": "format"}, {"LOWER": "string"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "cross"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "boundary"}, {"LOWER": "removal"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "externally"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "generated"}, {"LOWER": "error"}, {"LOWER": "message"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "redundant"}, {"LOWER": "code"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "complex"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inadequate"}, {"LOWER": "encryption"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "type"}, {"LOWER": "confusion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "link"}, {"LOWER": "resolution"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "encapsulation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "illegal"}, {"LOWER": "address"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "forgery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xquery"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "invalid"}, {"LOWER": "memory"}, {"LOWER": "write"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "path"}, {"LOWER": "manipulation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "weak"}, {"LOWER": "pseudo"}, {"LOWER": "random"}, {"LOWER": "number"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "tls"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "stack"}, {"LOWER": "based"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unprotected"}, {"LOWER": "primary"}, {"LOWER": "channel"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "salt"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "phishing"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "exception"}, {"LOWER": "behavior"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "algorithmic"}, {"LOWER": "complexity"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "byte"}, {"LOWER": "ordering"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "input"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "audit"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uncontrolled"}, {"LOWER": "resource"}, {"LOWER": "consumption"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "encrypt"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "signature"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "oauth"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "data"}, {"LOWER": "breach"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "encoding"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "bounds"}, {"LOWER": "read"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "nonubiquitous"}, {"LOWER": "api"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "pointerdereference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "intrusion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "openssh"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ssh"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "search"}, {"LOWER": "path"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "bomb"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "semantic"}, {"LOWER": "object"}, {"LOWER": "comparison"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "communications"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "udp"}, {"LOWER": "flood"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "lock"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "absolute"}, {"LOWER": "path"}, {"LOWER": "traversal"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "premature"}, {"LOWER": "release"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "logic"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "login"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "identification"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sftp"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "behavioral"}, {"LOWER": "inconsistency"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "certificate"}, {"LOWER": "validity"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "implementation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "diffie"}, {"LOWER": "hellman"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hijacking"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "mitm"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "weak"}, {"LOWER": "cryptography"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "guessable"}, {"LOWER": "captcha"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unauthorise"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inaccurate"}, {"LOWER": "comments"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "support"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "virus"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "nonce"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "trapdoor"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "secure"}, {"LOWER": "coding"}, {"LOWER": "standard"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "buffer"}, {"LOWER": "over"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "read"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "zero"}, {"LOWER": "day"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "disclose"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "escape"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "input"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "os"}, {"LOWER": "command"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "documentation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sanitizer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "multiple"}, {"LOWER": "unlocks"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "pgp"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "secur"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "null"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "pointer"}, {"LOWER": "dereference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "code"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "http"}, {"LOWER": "proxy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "compartmentalization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "session"}, {"LOWER": "fixation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unconditional"}, {"LOWER": "control"}, {"LOWER": "flow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "command"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "platform"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "dependent"}, {"LOWER": "third"}, {"LOWER": "party"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "reference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inappropriate"}, {"LOWER": "whitespace"}, {"LOWER": "style"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "cpu"}, {"LOWER": "computation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "least"}, {"LOWER": "privilege"}, {"LOWER": "violation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "tainted"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unprotected"}, {"LOWER": "windows"}, {"LOWER": "messaging"}, {"LOWER": "channel"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "response"}, {"LOWER": "discrepancy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "X.509"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "caller"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "synchronization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unprotected"}, {"LOWER": "storage"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "authorization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "null"}, {"LOWER": "pointer"}, {"LOWER": "dereference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "user"}, {"LOWER": "account"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "command"}, {"LOWER": "execution"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "certificate"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "check"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "penetration"}, {"LOWER": "test"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "x"}, {"LOWER": "509"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dsa"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unnecessary"}, {"LOWER": "privileges"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "partial"}, {"LOWER": "string"}, {"LOWER": "comparison"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "reversible"}, {"LOWER": "one"}, {"LOWER": "way"}, {"LOWER": "hash"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "string"}, {"LOWER": "expansion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "credential"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "logging"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ipsec"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "protocol"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "aes"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "outside"}, {"LOWER": "bound"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "range"}, {"LOWER": "pointer"}, {"LOWER": "offset"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xml"}, {"LOWER": "flood"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "rfc"}, {"LOWER": "2898"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "session"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "id"}, {"LOWER": "length"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "configuration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "input"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "buffer"}, {"LOWER": "overflows"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "malicious"}, {"LOWER": "code"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "double"}, {"LOWER": "character"}, {"LOWER": "xss"}, {"LOWER": "manipulations"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "auth"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sql"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hack"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "type"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dangling"}, {"LOWER": "database"}, {"LOWER": "cursor"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "data"}, {"LOWER": "exfiltration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "automated"}, {"LOWER": "optimizations"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "encode"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "protection"}, {"LOWER": "mechanism"}, {"LOWER": "failure"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "variable"}, {"LOWER": "extraction"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "path"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "non"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "ubiquitous"}, {"LOWER": "api"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "buffer"}, {"LOWER": "over"}, {"LOWER": "read"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "synchronisation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "cryptographic"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "business"}, {"LOWER": "logic"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "privilege"}, {"LOWER": "escalation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "trust"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cpe"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "address"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "information"}, {"LOWER": "leakage"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "privacy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inappropriate"}, {"LOWER": "encoding"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "risky"}, {"LOWER": "resource"}, {"LOWER": "management"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "password"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "eval"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sanitise"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "attack"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "information"}, {"LOWER": "leak"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "transport"}, {"LOWER": "layer"}, {"LOWER": "protection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "safe"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "buffer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "lock"}, {"LOWER": "check"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "permission"}, {"LOWER": "race"}, {"LOWER": "condition"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "protection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "exploit"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "pathname"}, {"LOWER": "traversal"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "open"}, {"LOWER": "redirect"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "duplicate"}, {"LOWER": "validation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hardcoded"}, {"LOWER": "cryptographic"}, {"LOWER": "key"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "key"}, {"LOWER": "management"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "configuration"}, {"LOWER": "management"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "wrap"}, {"LOWER": "around"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "injection"}, {"LOWER": "flaws"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "fraud"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "resolution"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "poison"}, {"LOWER": "null"}, {"LOWER": "byte"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "breach"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "content"}, {"LOWER": "security"}, {"LOWER": "policy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "inherited"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "adherence"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "null"}, {"LOWER": "byte"}, {"LOWER": "interaction"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "uninitalized"}, {"LOWER": "memory"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "vulnerability"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "server"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "side"}, {"LOWER": "data"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "npe"}, {"LOWER": "issue"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "error"}, {"LOWER": "handling"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "defensive"}, {"LOWER": "programming"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "man"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "in"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "the"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "middle"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "following"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "containment"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "access"}, {"LOWER": "control"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "mobile"}, {"LOWER": "code"}, {"LOWER": "issues"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "coded"}, {"LOWER": "cryptographic"}, {"LOWER": "key"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "crosssite"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "back"}, {"LOWER": "door"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "double"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "checked"}, {"LOWER": "locking"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "data"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "short"}, {"LOWER": "circuit"}, {"LOWER": "evaluation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ssl"}, {"LOWER": "flood"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "conversion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "web"}, {"LOWER": "problems"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "steal"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ssh"}, {"LOWER": "key"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hsm"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "serverside"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "logic"}, {"LOWER": "bomb"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cloudflare"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "weak"}, {"LOWER": "access"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unexpected"}, {"LOWER": "entry"}, {"LOWER": "points"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "extraneous"}, {"LOWER": "untrusted"}, {"LOWER": "data"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "off"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "by"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "one"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "saml"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xss"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "user"}, {"LOWER": "management"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ecdsa"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hash"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unexpected"}, {"LOWER": "sign"}, {"LOWER": "extension"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "wrap"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "around"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "memory"}, {"LOWER": "leak"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dynamic"}, {"LOWER": "variable"}, {"LOWER": "evaluation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "code"}, {"LOWER": "complexity"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "invalid"}, {"LOWER": "pointer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "iteration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "nessus"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "tunnelling"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "memory"}, {"LOWER": "corruption"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "worm"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "object"}, {"LOWER": "model"}, {"LOWER": "violation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "suspicious"}, {"LOWER": "comment"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "poison"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unquoted"}, {"LOWER": "search"}, {"LOWER": "path"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "rc4"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "shatter"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "preservation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "write"}, {"LOWER": "what"}, {"LOWER": "where"}, {"LOWER": "condition"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "shib"}, {"LOWER": "boleth"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "untrusted"}, {"LOWER": "pointer"}, {"LOWER": "dereference"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "http"}, {"LOWER": "response"}, {"LOWER": "splitting"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "authorization"}, {"LOWER": "bypass"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "origin"}, {"LOWER": "validation"}, {"LOWER": "error"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "server"}, {"LOWER": "side"}, {"LOWER": "request"}, {"LOWER": "forgery"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "check"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "base64_encode"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sanitization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "trusted"}, {"LOWER": "resource"}, {"LOWER": "url"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "man"}, {"LOWER": "in"}, {"LOWER": "middle"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "nullptr"}, {"LOWER": "exception"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "faulty"}, {"LOWER": "buffer"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inefficient"}, {"LOWER": "serverside"}, {"LOWER": "data"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "relative"}, {"LOWER": "path"}, {"LOWER": "traversal"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "leak"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"LOWER": "of"}, {"LOWER": "range"}, {"LOWER": "pointer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "always"}, {"LOWER": "incorrect"}, {"LOWER": "control"}, {"LOWER": "flow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "permission"}, {"LOWER": "assignment"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "excessive"}, {"LOWER": "execution"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "cryptographic"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "range"}, {"LOWER": "pointer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "transport"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "covert"}, {"LOWER": "storage"}, {"LOWER": "channel"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "information"}, {"LOWER": "loss"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "resource"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "stackbased"}, {"LOWER": "buffer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sanity"}, {"LOWER": "check"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "handler"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "ssl"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insufficient"}, {"LOWER": "computational"}, {"LOWER": "effort"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "preserved"}, {"LOWER": "inherited"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "pointer"}, {"LOWER": "scaling"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "information"}, {"LOWER": "management"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "null"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "pointer"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cross"}, {"LOWER": "site"}, {"LOWER": "scripting"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "calculation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cryptanalysis"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "bitlocker"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "security"}, {"LOWER": "misconfiguration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "deadlock"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "authentication"}, {"LOWER": "policy"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "attack"}, {"LOWER": "surface"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "inadequate"}, {"LOWER": "detection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "malicious"}, {"LOWER": "file"}, {"LOWER": "execution"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "bad"}, {"LOWER": "practices"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "remote"}, {"LOWER": "file"}, {"LOWER": "inclusion"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unreachable"}, {"LOWER": "exit"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "missing"}, {"LOWER": "default"}, {"LOWER": "case"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrectly"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "resolved"}, {"LOWER": "name"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dangerous"}, {"LOWER": "function"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "group"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "attack"}, {"LOWER": "vector"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "argument"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "weak"}, {"LOWER": "pseudo"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "random"}, {"LOWER": "number"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sandbox"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "verification"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "less"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "secure"}, {"LOWER": "algorithm"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xml"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "integer"}, {"LOWER": "underflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cleartext"}, {"LOWER": "storage"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "escrow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "crypt"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "use"}, {"LOWER": "after"}, {"LOWER": "free"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "server"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "wrong"}, {"LOWER": "status"}, {"LOWER": "code"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "hard"}, {"LOWER": "coded"}, {"LOWER": "network"}, {"LOWER": "resource"}, {"LOWER": "configuration"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "cwe"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "biometric"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "duplicate"}, {"LOWER": "identifier"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "synchronisation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sax"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "pci"}, {"LOWER": "dss"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "output"}, {"LOWER": "neutralization"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "toctou"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unvalidated"}, {"LOWER": "action"}, {"LOWER": "form"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "asymmetric"}, {"LOWER": "resource"}, {"LOWER": "consumption"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "blind"}, {"LOWER": "xpath"}, {"LOWER": "injection"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "integer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "symlink"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "sanitize"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "intruder"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "tainted"}, {"LOWER": "input"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "data"}, {"LOWER": "exfiltrate"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "crack"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "failure"}, {"LOWER": "to"}, {"LOWER": "restrict"}, {"LOWER": "url"}, {"LOWER": "access"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "externally"}, {"LOWER": "generated"}, {"LOWER": "error"}, {"LOWER": "message"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "improper"}, {"LOWER": "update"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "scam"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "double"}, {"LOWER": "decoding"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "bypass"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "resource"}, {"LOWER": "locking"}, {"LOWER": "problems"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "security"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "single"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "factor"}, {"LOWER": "authentication"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "nonserializable"}, {"LOWER": "object"}, {"LOWER": "stored"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "buffer"}, {"LOWER": "overflow"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "dmz"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "zombie"}, {"LOWER": "computer"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "insecure"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "out"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "of"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "bounds"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incorrect"}, {"LOWER": "execution"}, {"LOWER": "assigned"}, {"LOWER": "permissions"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "exposed"}, {"LOWER": "data"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "representation"}, {"LOWER": "errors"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "malware"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "decode"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "md5"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "availability"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "unnecessary"}, {"LOWER": "complexity"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "incomplete"}, {"LOWER": "i/o"}, {"LOWER": "documentation"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "xxe"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "buffer"}, {"LOWER": "under"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "read"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "capec"}]}
+{"label": "SECWORD", "pattern": [{"LOWER": "safe"}]}

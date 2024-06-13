@@ -1,7 +1,7 @@
-from secomlint.rule import Rule
-from secomlint.config import Config
-from secomlint.ruler import Ruler
 import click
+from rule import Rule
+from config import Config
+from ruler import Ruler
 
 
 class Compliance:

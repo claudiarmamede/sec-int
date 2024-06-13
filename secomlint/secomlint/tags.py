@@ -1,11 +1,9 @@
 from secomlint.utils import extend_tags
 
-METADATA = ['weakness', 'severity', 'detection', 'report', 'cvss', 'introduced in']
+HEADER = ['found', 'detected']
 
-CONTACT = ['reported-by', 'signed-off-by', 'co-authored-by']
+SUMMARY = ['what', 'why', 'how', 'when']
 
-CONTACT_EXT = extend_tags(CONTACT)
+EXPLANATION = ['weakness', 'type', 'severity', 'file', 'location', 'line', 'lines', 'unchecked', 'checked', 'tainted', 'sources', 'sinks', 'extra', 'additional']
 
-BUG_TRACKER = extend_tags(['bug-tracker', 'resolves', 'see also', 'fixes'])
-
-TAGS = METADATA + CONTACT_EXT + BUG_TRACKER
+CONTACT = ['reported-by', 'signed-off-by', 'co-authored-by', 'method']

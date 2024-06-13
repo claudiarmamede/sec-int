@@ -1,0 +1,21 @@
+
+found: <weakness/type> in <file:lines> (<severity>)
+
+What: Explain the security issue(s) that was detected.
+Why:  Focus on why this vulnerability is relevant and potential impact.
+How:  Describe how this vulnerability can be triggered.
+When: Describe when the vulnerability was discovered (DD-MM-YYYY)  
+
+Weakness: weakness identification or CWE-ID. 
+Severity: severity of the issue (Low, Medium, High, Critical).
+File: vulnerability location at file-level
+Location: vulnerability location at function/module-level
+Lines: vulnerable lines
+Unchecked tainted variables: tainted variables that do not belong to any control structure 
+Checked tainted variables: tainted variables that belong to a control structure 
+Sources: all entry points in code where user input enters an application
+Sinks: all actions performed by the application, using user input from a source
+Extra: extra information useful to detect additional vulnerability typess
+
+Reported-by: reporter name <reporter-email@host.com>
+Method: description of the tools used (either manual, tool, AI)

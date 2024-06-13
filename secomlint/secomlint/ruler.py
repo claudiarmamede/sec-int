@@ -1,6 +1,6 @@
-from secomlint.rule import Rule
+from rule import Rule
 
-from secomlint.section import Header, Body, Metadata, Contact, Bugtracker
+from section import Header, Summary, Body, Contact
 
 class Ruler:
     def __init__(self, config) -> None:
