@@ -9,20 +9,19 @@ header_is_not_empty:
   active: true
   type: 1
   value: 0
-header_starts_with_type:
+header_starts_with_tag:
   active: true
   type: 1
   value: 'vuln-detect'
-header_identifies_weakness:
+header_has_weakness:
   active: true
   type: 1
-header_ends_with_severity:
+header_has_severity:
   active: true
   type: 0 
 summary_has_what:
   active: true
   type: 1 
-  value: 'what'
 summary_what_identifies_weakness:
   active: true
   type: 0

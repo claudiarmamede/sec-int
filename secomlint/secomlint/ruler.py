@@ -14,16 +14,17 @@ class Ruler:
                                    default_rule['type'],
                                    default_rule['value'] if 'value' in default_rule.keys() else 'entity',
                                    section(),
-                                   None # this is supposed to be the tag
                                 #    tag='_'.join(rule.split('_')[2::])
                                 #    if section_name in ('metadata', 'contact', 'bugtracker')
                                 #    else None
                                    ))
 
-    def get_section_rules(self, section : Section, tag : str = None) -> list:
+    def get_section_rules(self, section : Section) -> list:
+        # tags = [] 
+        # tags.extend(section.tags.values())
+
         return [rule for rule in self.rules
-                if type(rule.section) == type(section)
-                and rule.tag == tag]
+                if type(rule.section) == type(section)]
 
 
 

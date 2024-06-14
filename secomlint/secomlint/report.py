@@ -8,25 +8,23 @@ from tags import HEADER, SUMMARY, EXPLANATION, REPORTER
 class Report:
     def __init__(self, lines) -> None:
         self.raw_text = lines
-        self.text = lines
         self.sections = []
 
-
     def parse(self):
-        def is_header(lines):
-            return re.search(rf"({'|'.join(HEADER)}):", lines, re.IGNORECASE)
+        def is_header(block):
+            return re.search(rf"({'|'.join(HEADER)}):", block, re.IGNORECASE)
 
-        def is_summary(lines): 
-            return re.search(rf"({'|'.join(SUMMARY)}):", lines, re.IGNORECASE)
+        def is_summary(block): 
+            return re.search(rf"({'|'.join(SUMMARY)}):", block, re.IGNORECASE)
 
-        def is_explanation(lines): 
-            return re.search(rf"({'|'.join(EXPLANATION)}):", lines, re.IGNORECASE)
+        def is_explanation(block): 
+            return re.search(rf"({'|'.join(EXPLANATION)}):", block, re.IGNORECASE)
 
-        def is_reporter(lines):
-            return re.search(rf"({'|'.join(REPORTER)}):", lines, re.IGNORECASE)
+        def is_reporter(block):
+            return re.search(rf"({'|'.join(REPORTER)}):", block, re.IGNORECASE)
 
         # Split into sections based on new lines
-        blocks = re.split(r'\n{2,}', self.text.strip())
+        blocks = re.split(r'\n{2,}', self.raw_text.strip())
         
         # Setup NER extractor
         extractor = Extractor()
@@ -35,19 +33,19 @@ class Report:
         for block in blocks:
                 if is_header(block):
                     self.sections.append(
-                        Header(lines = block, entities=extractor.entities(block))
+                        Header(text = block, entities=extractor.entities(block))
                     )
                 elif is_summary(block):
                     self.sections.append(
-                        Summary(lines = block, entities=extractor.entities(block))
+                        Summary(text = block, entities=extractor.entities(block))
                     )
                 elif is_explanation(block):
                     self.sections.append(
-                        Explanation(lines = block, entities=extractor.entities(block))
+                        Explanation(text = block, entities=extractor.entities(block))
                     )
                 elif is_reporter(block):
                     self.sections.append(
-                        Reporter(lines = block, entities=extractor.entities(block))
+                        Reporter(text = block, entities=extractor.entities(block))
                     )
                 else:
                     print(f"Idk what this is {block}")
@@ -56,4 +54,4 @@ class Report:
         return self.sections
 
     def get_text(self):
-        return self.text
+        return self.raw_text

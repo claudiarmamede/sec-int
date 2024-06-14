@@ -1,9 +1,9 @@
 from secomlint.utils import extend_tags
-
+# Assumes tags appear in the begginging of the text. Alter this in section.py
 HEADER = ['vuln-detect']
 
 SUMMARY = ['what', 'why', 'how', 'when']
 
-EXPLANATION = ['weakness', 'type', 'severity', 'file', 'location', 'line', 'lines', 'unchecked', 'checked', 'tainted', 'sources', 'sinks', 'extra', 'additional']
+EXPLANATION = ['weakness', 'cwe', 'type', 'severity', 'location', 'unchecked-vars', 'check-vars', 'taint', 'sources', 'sinks', 'extra', 'additional']
 
-REPORTER = ['reported-by', 'co-authored-by', 'method', 'tool', 'strategy']
+REPORTER = ['reported-by', 'co-authored-by', 'method', 'tool', 'strategy', 'reference', 'url']

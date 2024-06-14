@@ -1,21 +1,25 @@
+vuln-detect: <weakness/type> in <file:lines> (<severity>)
 
-found: <weakness/type> in <file:lines> (<severity>)
+what: Explain the security issue(s) that was detected.
+why:  Focus on why this vulnerability is relevant and potential impact.
+how:  Describe how this vulnerability can be triggered.
+when: Describe when the vulnerability was discovered (DD-MM-YYYY)  
 
-What: Explain the security issue(s) that was detected.
-Why:  Focus on why this vulnerability is relevant and potential impact.
-How:  Describe how this vulnerability can be triggered.
-When: Describe when the vulnerability was discovered (DD-MM-YYYY)  
+weakness: weakness identification or CWE-ID
+cwe: weakness identification or CWE-ID
+type: weakness identification or CWE
+severity: severity of the issue (Low, Medium, High, Critical).
+location: <file>:<method>:<line>
+unchecked-vars: tainted variables that do not belong to any control structure 
+checked-vars: tainted variables that belong to a control structure 
+sources: all entry points in code where user input enters an application
+sinks: all actions performed by the application, using user input from a source
+extra: extra information useful to detect additional vulnerability typess
 
-Weakness: weakness identification or CWE-ID. 
-Severity: severity of the issue (Low, Medium, High, Critical).
-File: vulnerability location at file-level
-Location: vulnerability location at function/module-level
-Lines: vulnerable lines
-Unchecked tainted variables: tainted variables that do not belong to any control structure 
-Checked tainted variables: tainted variables that belong to a control structure 
-Sources: all entry points in code where user input enters an application
-Sinks: all actions performed by the application, using user input from a source
-Extra: extra information useful to detect additional vulnerability typess
-
-Reported-by: reporter name <reporter-email@host.com>
-Method: description of the tools used (either manual, tool, AI)
+reported-by: reporter name <reporter-email@host.com>
+co-authored-by: reporter name <reporter-email@host.com>
+method: description of the tools used (either manual, tool, AI)
+tool: description of the tools used (either manual, tool, AI)
+strategy: description of the tools used (either manual, tool, AI)
+reference: url.pt
+url: url.pt

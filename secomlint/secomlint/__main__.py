@@ -34,15 +34,14 @@ def read_report(fpath:str) -> str:
 @click.option("--out", help="Output report to file name.")
 @click.option("--rules-config", default="config/rules.yml", help="Rule configuration file path name.")
 def main(report:str, compliance:bool, score:bool, quiet:bool, informativeness:bool, out:str, rules_config:str):
-    # if compliance:
-    if report:
-        report = read_report(report)
-        if report.sections:
-            compliance = Compliance(path_config = rules_config)
-            compliance.check(report)
-            # compliance.calculate_score()
-            # compliance.report(quiet, score, out)
-        pass
+    # TODO: tags not parsing completely!! checked/unchecked
+   
+   # if compliance:
+    report = read_report(report)
+    if report.sections:
+        ruler = Ruler(Config(rules_config))
+        print(ruler.get_section_rules(report.sections[0]))
+
         # if not sys.stdin.isatty(): 
         #     message = read_message()
         #     if message.sections:

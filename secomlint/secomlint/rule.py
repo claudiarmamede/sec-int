@@ -11,39 +11,62 @@ class Result:
 
 
 class Rule:
-    def __init__(self, name, active, wtype, value, section, tag=None) -> None:
+    def __init__(self, name, active, wtype, value, section) -> None:
         self.name = name
         self.active = active
         self.wtype = wtype
         self.value = value
         self.section = section
-        self.tag = tag
 
     def header_max_length(self, section):
-        section_text = section.lines
-        if section.lines and len(section_text) <= self.value:
+        """rule: header_max_length"""
+        section_text = section.text
+        if len(section_text) <= self.value:
             return Result('header_max_length', True, self.wtype,
                            f'Header size is within the max length ({self.value} chars).')
         return Result('header_max_length', False, self.wtype,
                        f'Header has more than {self.value} chars.')
 
     def header_is_not_empty(self, section):
-        section_text = section.lines
+        """rule: header_is_not_empty"""
+        section_text = section.text
         if len(section_text) > self.value:
             return Result('header_is_not_empty', True, self.wtype,
                            'Header is not empty.')
         return Result('header_is_not_empty', False, self.wtype,
                        'Header is empty.')
 
-    def header_starts_with_type(self, section):
-        section_text = section.lines
+    def header_starts_with_tag(self, section):
+        """rule: header_starts_with_tag"""
+        section_text = section.text
         if re.search(rf"^{self.value}.*", section_text):
             return Result('header_starts_with_type', True, self.wtype,
                            f'Header starts with {self.value} type')
         return Result('header_starts_with_type', False, self.wtype,
                        f'Header is missing the {self.value} type at the start.')
 
+    def header_has_weakness(self, section):
+        """rule: header_has_weakness
+           condition: header contains entity:weakness"""
+        entities = section.entities
+
+        print(entities)
+        if entities:
+            weakness = [list(entity)[0]
+                        for entity in entities if list(entity)[1] == 'CWEID']
+            if weakness:
+                return Result('explanation_has_weakness', True, self.wtype,
+                            'Explanation mentions a weakness (CWE) id.')
+            return Result('explanation_has_weakness', False, self.wtype,
+                        'Explanation has tag weakness but a weakness (CWE) id was not mentioned.')
+        return Result('explanation_has_weakness', False, self.wtype,
+                'Explanation section is missing weakness tag/mention.')
+
+
+
+
     def header_ends_with_severity(self, section):
+        """rule: header_ends_with_severity"""
         def severity_in_the_end(value, text):
             # return re.search(rf".*{value}(\))?$", text)
             return re.search(rf"\(severity: {value}\)$", text)
@@ -64,71 +87,107 @@ class Rule:
         return Result('header_ends_with_severity', False, self.wtype,
                        'Header is missing SEVERITY at the end.')
 
-    def body_max_length(self, section):
-        if section.lines:
-            body = ''.join(section.lines)
-            if len(body) <= self.value:
-                return Result('body_max_length', True, self.wtype,
-                               f'Body size is within the max length ({self.value} words).')
-        return Result('body_max_length', False, self.wtype,
-                       f'Body has more than {self.value} words.')
 
-    def body_is_not_empty(self, section):
-        body = ''.join(section.lines)
-        if len(body) > self.value:
-            return Result('body_is_not_empty', True, self.wtype,
-                           'Body is not empty.')
-        return Result('body_is_not_empty', False, self.wtype,
-                       'Body is empty.')
+    def summary_has_what(self, section):
+        """rule:summary_has_what """
+        pass
 
-    def body_has_three_paragraphs(self, section):
-        if len(section.lines) == 3:
-            return Result('body_has_three_paragraphs', True, self.wtype,
-                           'Body follows the what, why and how structure (three paragraphs).')
-        return Result('body_has_three_paragraphs', False, self.wtype,
-                       'Body doesn\'t follow the what, why and how structure (three paragraphs).')
+    def summary_what_identifies_weakness(self, section):
+        """rule: summary_what_identifies_weakness"""
+        pass
 
-    def metadata_has_weakness(self, section):
+    def summary_has_why(self, section):
+        """rule: summary_has_why"""
+        pass
+
+    def summary_has_how(self, section):
+        """rule: summary_has_how"""
+        pass
+
+    def summary_has_when(self,section):
+        """rule: summary_has_when"""
+        pass
+
+    def summary_max_length(self, section):
+        """rule: summary_max_length"""
+        section_text = section.lines
+        if section.lines and len(section_text) <= self.value:
+            return Result('summary_max_length', True, self.wtype,
+                           f'Summary size is within the max length ({self.value} chars).')
+        return Result('summary_max_length', False, self.wtype,
+                       f'Summary has more than {self.value} chars.')
+
+
+    def explanation_is_not_empty(self, section):
+        """rule: explanation_is_not_empty"""
+        section_text = section.lines
+        if len(section_text) > self.value:
+            return Result('explanation_is_not_empty', True, self.wtype,
+                           'Explanation is not empty.')
+        return Result('explanation_is_not_empty', False, self.wtype,
+                       'Explanation is empty.')
+
+    def explanation_has_weakness(self, section):
         if 'weakness' == section.tag:
             entities = section.entities
             if entities:
                 weakness = [list(entity)[0]
                             for entity in entities if list(entity)[1] == 'CWEID']
                 if weakness:
-                    return Result('metadata_has_weakness', True, self.wtype,
-                                   'Metadata mentions a weakness (CWE) id.')
-                return Result('metadata_has_weakness', False, self.wtype,
-                               'Metadata has tag weakness but a weakness (CWE) id was not mentioned.')
-        return Result('metadata_has_weakness', False, self.wtype,
-                       'Metadata section is missing weakness tag/mention.')
+                    return Result('explanation_has_weakness', True, self.wtype,
+                                   'Explanation mentions a weakness (CWE) id.')
+                return Result('explanation_has_weakness', False, self.wtype,
+                               'Explanation has tag weakness but a weakness (CWE) id was not mentioned.')
+        return Result('explanation_has_weakness', False, self.wtype,
+                       'Explanation section is missing weakness tag/mention.')
 
-    def metadata_has_severity(self, section):
+    def explanation_has_severity(self, section):
         if 'severity' == section.tag:
             entities = section.entities
             if entities:
                 severity = [list(entity)[0] for entity in entities if list(
                     entity)[1] == 'SEVERITY']
                 if severity:
-                    return Result('metadata_has_severity', True, self.wtype,
-                                   f'Metadata mentions severity.')
-                return Result('metadata_has_severity', False, self.wtype,
-                               f'Metadata section has severity tag but is missing vulnerability severity /mention.')
-        return Result('metadata_has_severity', False, self.wtype,
-                       f'Metadata section is missing vulnerability severity tag/mention.')
+                    return Result('explanation_has_severity', True, self.wtype,
+                                   f'Explanation mentions severity.')
+                return Result('explanation_has_severity', False, self.wtype,
+                               f'Explanation section has severity tag but is missing vulnerability severity /mention.')
+        return Result('explanation_has_severity', False, self.wtype,
+                       f'Explanation section is missing vulnerability severity tag/mention.')
 
-    def metadata_has_detection(self, section):
-        if 'detection' == section.tag:
-            entities = section.entities
-            if entities:
-                detection = [list(entity)[0] for entity in entities if list(
-                    entity)[1] == 'DETECTION']
-                if detection:
-                    return Result('metadata_has_detection', True, self.wtype,
-                                   f'Metadata mentions detection method.')
-                return Result('metadata_has_detection', False, self.wtype,
-                        f'Metadata section has detection tag but is missing detection method mention.')
-        return Result('metadata_has_detection', False, self.wtype,
-                       f'Metadata section is missing detection method tag/mention.')
+    def explanation_has_location_file(self, section):
+        """rule:explanation_has_location_file"""
+        pass
+
+
+    def explanation_has_location_method(self, section):
+        """rule:explanation_has_location_methodx"""
+        pass
+    
+
+    def explanation_has_location_line(self, section):
+        """rule:explanation_has_location_line"""
+        pass
+
+
+    def explanation_has_unchecked_vars(self, section):
+        """rule:explanation_has_unchecked_vars"""
+        pass
+
+
+    def explanation_has_checked_vars(self, section):
+        """rule:explanation_has_checked_vars"""
+        pass
+    
+    def explanation_has_sources(self, section):
+        """rule:explanation_has_sources"""
+        pass
+
+
+    def explanation_has_sinks(self, section):
+        """rule:explanation_has_sinks"""
+        pass
+
 
     def metadata_has_report(self, section):
         if 'report' == section.tag:
@@ -165,46 +224,34 @@ class Rule:
         return Result('metadata_has_introduced_in', False, self.wtype,
                        f'Metadata section is missing introduced in tag/mention.')
 
-    def contact_has_reported_by(self, section):
+    def reporter_has_reported_by(self, section):
+        """rule:reporter_has_reported_by"""
         if 'reported_by' == section.tag and section.lines:
             entities = section.entities
             email = [list(entity)[0]
                      for entity in entities if list(entity)[1] == 'EMAIL']
             if email:
-                return Result('contacts_has_reported_by', True, self.wtype,
+                return Result('reporter_has_reported_by', True, self.wtype,
                                f'Contacts section includes {self.value} info.')
-            return Result('contacts_has_reported_by', False, 0,
+            return Result('reporter_has_reported_by', False, 0,
                            f'Contacts section includes tag for {self.value} but email is missing.')
-        return Result('contacts_has_reported_by', False, self.wtype,
+        return Result('reporter_has_reported_by', False, self.wtype,
                        f'Contacts section is missing {self.value} info.')
 
-    def contact_has_signed_off_by(self, section):
-        if 'signed_off_by' == section.tag and section.lines:
-            entities = section.entities
-            email = [list(entity)[0]
-                     for entity in entities if list(entity)[1] == 'EMAIL']
-            if email:
-                return Result('contact_has_signed_off_by', True, self.wtype,
-                               f'Contacts section includes {self.value} info.')
-            return Result('contact_has_signed_off_by', False, 0,
-                           f'Contacts section includes tag or mention for {self.value} but email is missing.')
-        return Result('contact_has_signed_off_by', False, self.wtype,
-                       f'Contacts section is missing {self.value} info.')
-
-    def contact_has_co_authored_by(self, section):
+    def reporter_has_co_authored_by(self, section):
         if 'co_authored_by' == section.tag and section.lines:
             entities = section.entities
             email = [list(entity)[0]
                      for entity in entities if list(entity)[1] == 'EMAIL']
             if email:
-                return Result('contacts_has_co_authored_by', True, self.wtype,
+                return Result('reporter_has_co_authored_by', True, self.wtype,
                                f'Contacts section includes {self.value} info.')
-            return Result('contacts_has_co_authored_by', True, 0,
+            return Result('reporter_has_co_authored_by', True, 0,
                            f'Contacts section includes tag or mention for {self.value} but email is missing.')
-        return Result('contacts_has_co_authored_by', False, self.wtype,
+        return Result('reporter_has_co_authored_by', False, self.wtype,
                        f'Contacts section is missing {self.value} info.')
 
-    def bugtracker_has_reference(self, section):
+    def reporter_identifies_detection_strategy(self, section):
         if 'reference' == section.tag and section.lines:
             line = ''.join(section.lines)
             if 'bug-tracker' in line:
@@ -212,10 +259,10 @@ class Rule:
                 url = [list(entity)[0]
                        for entity in entities if list(entity)[1] == 'URL']
                 if url:
-                    return Result('bugtracker_has_reference', True, self.wtype,
-                                   f'Bug tracker section includes url.')
-                return Result('bugtracker_has_reference', False, self.wtype,
-                               f'Bug tracker section mentions bug tracker but is missing url to it.')
+                    return Result('reporter_identifies_detection_strategy', True, self.wtype,
+                                   f'Reporter includes tooling.')
+                return Result('reporter_identifies_detection_strategy', False, self.wtype,
+                               f'Reporter Bug tracker section mentions bug tracker but is missing url to it.')
 
             if 'resolves' in line or 'see also' in line:
                 entities = section.entities
