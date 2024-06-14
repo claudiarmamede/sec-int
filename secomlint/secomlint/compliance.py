@@ -21,9 +21,9 @@ class Compliance:
         mid = 0
         for section in sections:
             section_rules = self.ruler.get_section_rules(
-                section,
-                tag=section.tag
+                section
             )
+
             for rule in section_rules:
                 if rule.active:
                     func_rule = getattr(Rule, rule.name)

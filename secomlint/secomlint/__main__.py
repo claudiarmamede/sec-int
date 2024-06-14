@@ -39,14 +39,8 @@ def main(report:str, compliance:bool, score:bool, quiet:bool, informativeness:bo
    # if compliance:
     report = read_report(report)
     if report.sections:
-        ruler = Ruler(Config(rules_config))
-        print(ruler.get_section_rules(report.sections[0]))
-
-        # if not sys.stdin.isatty(): 
-        #     message = read_message()
-        #     if message.sections:
-        #         compliance = Compliance(path=rules_config)
-        #         compliance.check(message)
+        compliance = Compliance(path_config=rules_config)
+        compliance.check(report)
         #         compliance.calculate_score()
         #         compliance.report(quiet, score)
         

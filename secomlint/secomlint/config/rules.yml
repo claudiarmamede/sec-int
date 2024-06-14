@@ -18,7 +18,10 @@ header_has_weakness:
   type: 1
 header_has_severity:
   active: true
-  type: 0 
+  type: 1 
+header_has_location:
+  active: true
+  type: 1
 summary_has_what:
   active: true
   type: 1 
