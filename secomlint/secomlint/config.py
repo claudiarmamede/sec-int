@@ -1,19 +1,17 @@
 import os
-
-from secomlint.utils import read_config
+import yaml
 
 
 class Config:
-    def __init__(self, path=None, openai_key=None) -> None:
-        self.rules_config_path = f"{os.path.dirname(os.path.abspath(__file__))}/config/rules.yml"
-        # self.openai_key_config_path = f"{os.path.dirname(os.path.abspath(__file__))}/config/openai-key"
-        if path:
-            self.default_rules = read_config(self.rules_config_path)
-            self.new_rules = read_config(path)
-            if self.new_rules:
-                for rule in self.new_rules:
-                    for element in self.new_rules[rule]:
-                        self.default_rules[rule][element] = self.new_rules[rule][element]
+    def __init__(self, path : str, openai_key=None) -> None:
+
+        def read_config(file):
+                with open(file, "r") as fin:
+                    return yaml.load(fin, Loader=yaml.FullLoader)
+
+        self.rules_config_path = f"{os.path.dirname(os.path.abspath(__file__))}/{path}"
+        self.default_rules = read_config(self.rules_config_path)
+        
         # if openai_key:
         #     self.openai_key = openai_key
 

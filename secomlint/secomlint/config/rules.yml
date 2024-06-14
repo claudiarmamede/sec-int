@@ -1,8 +1,6 @@
 # active [0,1]: 0 disables the rule; 1 enables the rule. By default it is enabled.
 # type [0,1]: 0 reports an warning; 1 reports an error.
 # value: value to use for the rule.
-
-# header related rules
 header_max_length:
   active: true
   type: 0 
@@ -20,83 +18,69 @@ header_identifies_weakness:
   type: 1
 header_ends_with_severity:
   active: true
-  type: 0 # you may not know how severe the vulnerability is
-
-
-# summary related rules
+  type: 0 
 summary_has_what:
   active: true
   type: 1 
   value: 'what'
-
-what_identifies_weakness:
+summary_what_identifies_weakness:
   active: true
   type: 0
-
 summary_has_why:
   active: true
   type: 1 
   value: 'why'
-
 summary_has_how:
   active: true
   type: 1 
   value: 'how'
-
 summary_has_when: 
   active: true
   type: 0 
   value: 'when'
-
 summary_max_length:
   active: true
   type: 0
   value: 150
-
-# explanation/body related rules
-body_is_not_empty:
+explanation_is_not_empty:
   active: true
   type: 1
   value: 0
-body_has_weakness:
+explanation_has_weakness:
   active: true
   type: 1
-body_has_severity:
+explanation_has_severity:
   active: true
   type: 1
-body_has_location_file:
+explanation_has_location_file:
   active: true
   type: 1
-body_has_location_method:
+explanation_has_location_method:
   active: true
   type: 1
-body_has_location_line:
+explanation_has_location_line:
   active: true
   type: 1
-body_has_unchecked_vars:
-  active: true:
-  type: 0
-body_has_checked_vars:
+explanation_has_unchecked_vars:
   active: true
   type: 0
-body_has_sources:
+explanation_has_checked_vars:
   active: true
   type: 0
-body_has_sinks:
+explanation_has_sources:
   active: true
   type: 0
-
-# contact related 
-contact_has_reported_by:
+explanation_has_sinks:
+  active: true
+  type: 0
+reporter_has_reported_by:
   active: true
   type: 0
   value: 'reported-by'
-
-contact_has_co_authored_by:
+reporter_has_co_authored_by:
   active: true
   type: 0
   value: 'co-authored-by'
-
-contact_identifies_detection_strategy:
+reporter_identifies_detection_strategy:
   active: true
   type: 1

@@ -20,7 +20,7 @@ class Rule:
         self.tag = tag
 
     def header_max_length(self, section):
-        section_text = ''.join(section.lines)
+        section_text = section.lines
         if section.lines and len(section_text) <= self.value:
             return Result('header_max_length', True, self.wtype,
                            f'Header size is within the max length ({self.value} chars).')
@@ -28,7 +28,7 @@ class Rule:
                        f'Header has more than {self.value} chars.')
 
     def header_is_not_empty(self, section):
-        section_text = ''.join(section.lines)
+        section_text = section.lines
         if len(section_text) > self.value:
             return Result('header_is_not_empty', True, self.wtype,
                            'Header is not empty.')
@@ -36,32 +36,33 @@ class Rule:
                        'Header is empty.')
 
     def header_starts_with_type(self, section):
-        section_text = ''.join(section.lines)
+        section_text = section.lines
         if re.search(rf"^{self.value}.*", section_text):
             return Result('header_starts_with_type', True, self.wtype,
                            f'Header starts with {self.value} type')
         return Result('header_starts_with_type', False, self.wtype,
                        f'Header is missing the {self.value} type at the start.')
 
-    def header_ends_with_vuln_id(self, section):
-        def vuln_id_at_the_end(value, text):
-            return re.search(rf".*{value}(\))?$", text)
-        section_text = ''.join(section.lines)
+    def header_ends_with_severity(self, section):
+        def severity_in_the_end(value, text):
+            # return re.search(rf".*{value}(\))?$", text)
+            return re.search(rf"\(severity: {value}\)$", text)
+        section_text = section.lines
         if self.value == 'entity':
             entities = section.entities
             if entities:
-                vuln_id = [list(entity)[0]
-                           for entity in entities if list(entity)[1] == 'VULNID']
-                if vuln_id:
-                    if vuln_id_at_the_end(vuln_id[0].lower(), section_text):
-                        return Result('header_ends_with_vuln_id', True, self.wtype,
-                                       'Header ends with vulnerability ID.')
+                severity = [list(entity)[0]
+                           for entity in entities if list(entity)[1] == 'SEVERITY']
+                if severity:
+                    if severity_in_the_end(severity[0].lower(), section_text):
+                        return Result('header_ends_with_severity', True, self.wtype,
+                                       'Header ends with SEVERITY.')
         else:
-            if vuln_id_at_the_end(self.value.lower(), section_text):
-                return Result('header_ends_with_vuln_id', True, self.wtype,
-                               'Header ends with vulnerability ID')
-        return Result('header_ends_with_vuln_id', False, self.wtype,
-                       'Header is missing the vulnerability ID at the end.')
+            if severity_in_the_end(self.value.lower(), section_text):
+                return Result('header_ends_with_severity', True, self.wtype,
+                               'Header ends with SEVERITY')
+        return Result('header_ends_with_severity', False, self.wtype,
+                       'Header is missing SEVERITY at the end.')
 
     def body_max_length(self, section):
         if section.lines:

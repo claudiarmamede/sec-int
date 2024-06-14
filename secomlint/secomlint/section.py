@@ -2,7 +2,7 @@
 
 class Section:
     def __init__(self) -> None:
-        self.lines = []
+        self.lines:str
         self.entities = []
         self.tag = None
 
@@ -14,9 +14,6 @@ class Section:
 
     def set_tag(self, tag):
         self.tag = tag
-
-    def append_line(self, line):
-        self.lines += [line]
 
 
 class Header(Section):
@@ -42,7 +39,7 @@ class Explanation(Section):
         super().set_tag(tag)
 
 
-class Contact(Section):
+class Reporter(Section):
     def __init__(self, lines=None, tag=None, entities=None) -> None:
         super().__init__()
         super().set_lines(lines)

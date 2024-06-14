@@ -1,8 +1,8 @@
 import re
 
-from section import Header, Summary, Explanation, Contact
+from section import Header, Summary, Explanation, Reporter
 from extractor import Extractor
-from tags import CONTACT, SUMMARY, HEADER, EXPLANATION
+from tags import HEADER, SUMMARY, EXPLANATION, REPORTER
 
 
 class Report:
@@ -23,7 +23,7 @@ class Report:
             return re.search(rf"({'|'.join(EXPLANATION)}):", lines, re.IGNORECASE)
 
         def is_reporter(lines):
-            return re.search(rf"({'|'.join(CONTACT)}):", lines, re.IGNORECASE)
+            return re.search(rf"({'|'.join(REPORTER)}):", lines, re.IGNORECASE)
 
         # Split into sections based on new lines
         blocks = re.split(r'\n{2,}', self.text.strip())
@@ -31,6 +31,7 @@ class Report:
         # Setup NER extractor
         extractor = Extractor()
 
+        # Parse report into sections and assign a type to each section
         for block in blocks:
                 if is_header(block):
                     self.sections.append(
@@ -46,7 +47,7 @@ class Report:
                     )
                 elif is_reporter(block):
                     self.sections.append(
-                        Contact(lines = block, entities=extractor.entities(block))
+                        Reporter(lines = block, entities=extractor.entities(block))
                     )
                 else:
                     print(f"Idk what this is {block}")

@@ -2,18 +2,22 @@ import click
 from rule import Rule
 from config import Config
 from ruler import Ruler
+from report import Report
+from section import Section
 
 
 class Compliance:
-    def __init__(self, config) -> None:
-        self.ruler = Ruler(Config(path=config))
+    def __init__(self, path_config : str) -> None:
+        self.ruler = Ruler(Config(path=path_config))
         self.results = []
         self.score = 0
         self.warnings = 0
         self.errors = 0
 
-    def check(self, message, section=None):
-        sections = [section] if section else message.sections
+    def check(self, report : Report, section : Section = None):
+        """ Check report compliance against the interpretability standard. """
+        """ TODO: check section only """
+        sections = [section] if section else report.sections
         mid = 0
         for section in sections:
             section_rules = self.ruler.get_section_rules(
@@ -42,7 +46,7 @@ class Compliance:
             [result.is_compliant for result in self.results])
         self.score = (rules_in_compliance / no_rules)
 
-    def report(self, quiet, score):
+    def report(self, quiet, score, out):
         def get_symbol(is_compliant, warning_type):
             if is_compliant:
                 return "✅"

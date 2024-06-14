@@ -6,4 +6,4 @@ SUMMARY = ['what', 'why', 'how', 'when']
 
 EXPLANATION = ['weakness', 'type', 'severity', 'file', 'location', 'line', 'lines', 'unchecked', 'checked', 'tainted', 'sources', 'sinks', 'extra', 'additional']
 
-CONTACT = ['reported-by', 'co-authored-by', 'method', 'tool', 'strategy']
+REPORTER = ['reported-by', 'co-authored-by', 'method', 'tool', 'strategy']
