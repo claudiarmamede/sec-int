@@ -1,14 +1,10 @@
-vuln-detect: <weakness/type> in <file:lines> (<severity>)
+vuln-detect: <cwe> in <file:lines> (severity:low)
 
 what: Explain the security issue(s) that was detected.
 why:  Focus on why this vulnerability is relevant and potential impact.
 how:  Describe how this vulnerability can be triggered.
 when: Describe when the vulnerability was discovered (DD-MM-YYYY)  
 
-weakness: weakness identification or CWE-ID
-cwe: weakness identification or CWE-ID
-type: weakness identification or CWE
-severity: severity of the issue (Low, Medium, High, Critical).
 location: <file>:<method>:<line>
 unchecked-vars: tainted variables that do not belong to any control structure 
 checked-vars: tainted variables that belong to a control structure 
