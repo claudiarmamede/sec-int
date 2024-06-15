@@ -12,17 +12,11 @@ class Ruler:
             self.rules.append(Rule(rule,
                                    default_rule['active'],
                                    default_rule['type'],
-                                   default_rule['value'] if 'value' in default_rule.keys() else 'entity',
-                                   section(),
-                                #    tag='_'.join(rule.split('_')[2::])
-                                #    if section_name in ('metadata', 'contact', 'bugtracker')
-                                #    else None
+                                   default_rule['value'] if 'value' in default_rule.keys() else None,
+                                   section()
                                    ))
 
     def get_section_rules(self, section : Section) -> list:
-        # tags = [] 
-        # tags.extend(section.tags.values())
-
         return [rule for rule in self.rules
                 if type(rule.section) == type(section)]
 

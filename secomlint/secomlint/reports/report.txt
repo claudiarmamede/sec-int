@@ -1,11 +1,11 @@
 vuln-detect: <cwe> in <file:lines> (severity:low)
 
-What: input validation error 
+what: Input validation error 
 why:  Focus on why this vulnerability is relevant and potential impact.
 how:  Describe how this vulnerability can be triggered.
 when: Describe when the vulnerability was discovered (DD-MM-YYYY)  
+where: x/file.c : 1
 
-location: <file>:<method>:<line>
 unchecked-vars: tainted variables that do not belong to any control structure 
 checked-vars: tainted variables that belong to a control structure 
 sources: all entry points in code where user input enters an application

@@ -85,13 +85,6 @@
 {"label":"FLAW","pattern":[{"LOWER":{"REGEX":"error"},"POS":"NOUN"}]}
 
 
-{"label": "BUGSFRAMEWORK", "pattern": [{"LOWER": "input"}, {"LOWER": "validation"}]}
-{"label": "BUGSFRAMEWORK", "pattern": [{"LOWER": "output"}, {"LOWER": "validation"}]}
-{"label": "BUGSFRAMEWORK", "pattern": [{"LOWER": "input"}, {"LOWER": "/"}, {"LOWER": "output"}, {"LOWER": "validation"}]}
-{"label": "BUGSFRAMEWORK", "pattern": [{"LOWER": "input"}, {"LOWER": "/"}, {"LOWER": "output"}, {"LOWER": "validation"}]}
-{"label": "BUGSFRAMEWORK", "pattern": [{"LOWER": "input"}, {"LOWER": "/", "OP": "?"}, {"LOWER": "output"}, {"LOWER": "validation"}]}
-{"label": "BUGSFRAMEWORK", "pattern": [{"LOWER": "input"}, {"LOWER": "/"}, {"LOWER": "output"}, {"LOWER": "bugs"}]}
-
 
 
 {"label":"CWEID","pattern":[{"LOWER": {"REGEX": "cwe-[0-9]+"}}]}
@@ -1845,8 +1838,8 @@
 {"label": "SECWORD", "pattern": [{"LOWER": "capec"}]}
 {"label": "SECWORD", "pattern": [{"LOWER": "safe"}]}
 
-
 {"label": "DATE", "pattern": [{"IS_DIGIT": true, "LENGTH": 4}, {"LOWER": {"REGEX": "-"}}, {"IS_DIGIT": true, "LENGTH": 2}, {"LOWER": {"REGEX": "-"}}, {"IS_DIGIT": true, "LENGTH": 2}]}
 {"label": "DATE", "pattern": [{"IS_DIGIT": true, "LENGTH": 2}, {"LOWER": {"REGEX": "-"}}, {"IS_DIGIT": true, "LENGTH": 2}, {"LOWER": {"REGEX": "-"}}, {"IS_DIGIT": true, "LENGTH": 4}]}
 {"label": "DATE", "pattern": [{"IS_DIGIT": true, "LENGTH": 2}, {"LOWER": {"REGEX": "-"}}, {"IS_DIGIT": true, "LENGTH": 4}, {"LOWER": {"REGEX": "-"}}, {"IS_DIGIT": true, "LENGTH": 2}]}
 
+{"label": "LOCATION", "pattern": [{"TEXT": {"REGEX": "[a-zA-Z]+\\.[a-z]+"}}]}

@@ -27,24 +27,26 @@ def read_report(fpath:str) -> str:
 
 @click.command()
 @click.option("--report", default="reports/report.txt", help="Report file path")
-@click.option("--compliance", is_flag=True, default=False, help="Show compliance report.")
+@click.option("--compliance", is_flag=True, default=True, help="Show compliance report.") # TODO: change to False
 @click.option("--score", is_flag=True, default=False, help="Show compliance score.")
 @click.option("--quiet", is_flag=True, default=False, help="Show only compliance errors and warnings.")
 @click.option("--informativeness", is_flag=True, default=False, help="Checks how informative is the body.")
 @click.option("--out", help="Output report to file name.")
 @click.option("--rules-config", default="config/rules.yml", help="Rule configuration file path name.")
 def main(report:str, compliance:bool, score:bool, quiet:bool, informativeness:bool, out:str, rules_config:str):
-    # TODO: tags not parsing completely!! checked/unchecked
-   
-   # if compliance:
     report = read_report(report)
-    if report.sections:
+    if not report: 
+        print(f"❌ Can't read report at {report}") 
+        return
+   
+    if compliance:
         compliance = Compliance(path_config=rules_config)
         compliance.check(report)
-        #         compliance.calculate_score()
-        #         compliance.report(quiet, score)
+        compliance.calculate_score()
+        compliance.report(quiet, score, out)
         
     if informativeness:
+        report
         pass
         # if not sys.stdin.isatty(): 
         #     message = read_message()

@@ -14,14 +14,11 @@ class Section:
     def set_entities(self, entities : dict) -> None:
         self.entities = entities
 
-    # def get_tags(self) -> list:
-    #     return list(self.tags.values())
 
     def get_all_entities(self) -> list:
-        return [item for sublist in self.entities.values() for item in sublist]
+        return [item for sublist in list(self.entities.values()) for item in sublist]
 
 
-    
 class Header(Section):
     def __init__(self, text=None, entities=None) -> None:
         super().__init__(text, entities)

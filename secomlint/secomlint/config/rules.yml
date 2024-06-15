@@ -38,29 +38,14 @@ summary_has_when:
   active: true
   type: 0 
   value: 'when'
+summary_has_where:
+  active: true
+  type: 1
+  value: 'where'
 summary_max_length:
   active: true
   type: 0
-  value: 150
-# explanation_is_not_empty:
-#   active: true
-#   type: 1
-#   value: 0
-# explanation_has_weakness:
-#   active: true
-#   type: 1
-# explanation_has_severity:
-#   active: true
-#   type: 1
-# explanation_has_location_file:
-#   active: true
-#   type: 1
-# explanation_has_location_method:
-#   active: true
-#   type: 1
-# explanation_has_location_line:
-#   active: true
-#   type: 1
+  value: 300
 # explanation_has_unchecked_vars:
 #   active: true
 #   type: 0
@@ -73,14 +58,14 @@ summary_max_length:
 # explanation_has_sinks:
 #   active: true
 #   type: 0
-# reporter_has_reported_by:
-#   active: true
-#   type: 0
-#   value: 'reported-by'
-# reporter_has_co_authored_by:
-#   active: true
-#   type: 0
-#   value: 'co-authored-by'
+reporter_has_reported_by:
+  active: true
+  type: 0
+  value: 'reported-by'
+reporter_has_co_authored_by:
+  active: true
+  type: 0
+  value: 'co-authored-by'
 # reporter_identifies_detection_strategy:
 #   active: true
 #   type: 1
