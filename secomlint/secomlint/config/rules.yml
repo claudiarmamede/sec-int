@@ -22,28 +22,26 @@ header_has_severity:
 # header_has_location:
 #   active: true
 #   type: 1
-# summary_has_what:
-#   active: true
-#   type: 1 
-# summary_what_identifies_weakness:
-#   active: true
-#   type: 0
-# summary_has_why:
-#   active: true
-#   type: 1 
-#   value: 'why'
-# summary_has_how:
-#   active: true
-#   type: 1 
-#   value: 'how'
-# summary_has_when: 
-#   active: true
-#   type: 0 
-#   value: 'when'
-# summary_max_length:
-#   active: true
-#   type: 0
-#   value: 150
+summary_has_what:
+  active: true
+  type: 1 
+  value: 'what'
+summary_has_why:
+  active: true
+  type: 1 
+  value: 'why'
+summary_has_how:
+  active: true
+  type: 1 
+  value: 'how'
+summary_has_when: 
+  active: true
+  type: 0 
+  value: 'when'
+summary_max_length:
+  active: true
+  type: 0
+  value: 150
 # explanation_is_not_empty:
 #   active: true
 #   type: 1
