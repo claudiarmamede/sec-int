@@ -1,6 +1,6 @@
 from rule import Rule
 from config import Config
-from section import Section, Header, Summary, Explanation, Reporter
+from section import Section, Header, Summary, Explanation, Fix, Reporter
 
 class Ruler:
     def __init__(self, config : Config) -> None:

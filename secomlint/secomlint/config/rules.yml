@@ -58,14 +58,26 @@ summary_max_length:
 # explanation_has_sinks:
 #   active: true
 #   type: 0
+fix_is_not_empty:
+  active: true
+  type: 1
+  value: 0
+fix_has_action:
+  active: true
+  type: 1
 reporter_has_reported_by:
   active: true
   type: 0
   value: 'reported-by'
-reporter_has_co_authored_by:
+reporter_has_co_reported_by:
   active: true
   type: 0
   value: 'co-authored-by'
-# reporter_identifies_detection_strategy:
-#   active: true
-#   type: 1
+reporter_has_method:
+  active: true
+  type: 1
+  value: 'method'
+reporter_has_reference:
+  active: true
+  type: 0
+  value: 'reference'

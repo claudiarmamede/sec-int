@@ -6,4 +6,6 @@ SUMMARY = ['what', 'why', 'how', 'when', 'where']
 
 EXPLANATION = ['unchecked-vars', 'check-vars', 'taint', 'sources', 'sinks', 'extra', 'additional']
 
+FIX = ['suggested-fix']
+
 REPORTER = ['reported-by', 'co-authored-by', 'method', 'tool', 'strategy', 'reference', 'url']

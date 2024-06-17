@@ -1,21 +1,26 @@
-vuln-detect: <cwe> in <file:lines> (severity:low)
+vuln-detect: <weakness name/id> in <file> (severity:<low, medium, high>)
 
-what: Input validation error 
-why:  Focus on why this vulnerability is relevant and potential impact.
-how:  Describe how this vulnerability can be triggered.
-when: Describe when the vulnerability was discovered (DD-MM-YYYY)  
-where: x/file.c : 1
 
-unchecked-vars: tainted variables that do not belong to any control structure 
-checked-vars: tainted variables that belong to a control structure 
-sources: all entry points in code where user input enters an application
-sinks: all actions performed by the application, using user input from a source 
-extra: extra information useful to detect additional vulnerability typess
+what: describe the weakness/problem
+why:  describe its impact
+how:  describe how the weakness can be triggered
+when: describe when the problem was found  
+where: describe where the problem is located <file:method:lines>
+
+
+unchecked-vars: identified tainted variables not addressed by any control structure 
+checked-vars: identifies tainted variables addressed by at least 1 control structure 
+sources: identifies all entry points in code where user input enters an application
+sinks: identifies all actions performed by the application, using user input from a source
+extra: additional information (to accomodate for different vulnerability types)
+
+
+suggested-fix: 
+
 
 reported-by: reporter name <reporter-email@host.com>
-co-authored-by: reporter name <reporter-email@host.com>
-method: description of the tools used (either manual, tool, AI)
-tool: description of the tools used (either manual, tool, AI)
-strategy: description of the tools used (either manual, tool, AI)
-reference: url.pt
-url: url.pt
+co-reported-by: reporter name <reporter-email@host.com>
+
+[For each tool used during the detection]
+method: CodeQL transformers  <tool-name, manual>
+reference: link to the tool/strategy

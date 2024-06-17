@@ -1,5 +1,5 @@
 import re
-from tags import HEADER, SUMMARY, EXPLANATION, REPORTER
+from tags import HEADER, SUMMARY, EXPLANATION, FIX, REPORTER
 """This module abstracts the different sections of a report."""
 
 
@@ -43,7 +43,6 @@ class Summary(Section):
         for line in self.lines:
             self.tags[line] = [match.lower() for match in match_summary_tags(line)]
 
-
 class Explanation(Section):
     def __init__(self, text=None, entities=None) -> None:
         super().__init__(text, entities)
@@ -52,6 +51,18 @@ class Explanation(Section):
     def set_tags(self):
         def match_explanation_tags(lines): 
             return re.findall(rf"^({'|'.join(EXPLANATION)})", lines, re.IGNORECASE | re.MULTILINE )
+        
+        for line in self.lines:
+            self.tags[line] = [match.lower() for match in match_explanation_tags(line)]
+
+class Fix(Section):
+    def __init__(self, text=None, entities=None) -> None:
+        super().__init__(text, entities)
+        self.set_tags()
+        
+    def set_tags(self):
+        def match_explanation_tags(lines): 
+            return re.findall(rf"^({'|'.join(FIX)})", lines, re.IGNORECASE | re.MULTILINE )
         
         for line in self.lines:
             self.tags[line] = [match.lower() for match in match_explanation_tags(line)]

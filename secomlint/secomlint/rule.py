@@ -245,39 +245,8 @@ class Rule:
         """rule: explanation_is_not_empty"""
         section_text = section.lines
         if len(section_text) > self.value:
-            return Result('explanation_is_not_empty', True, self.wtype,
-                           'Explanation is not empty.')
-        return Result('explanation_is_not_empty', False, self.wtype,
-                       'Explanation is empty.')
-
-
-    # def explanation_has_severity(self, section):
-    #     if 'severity' == section.tag:
-    #         entities = section.entities
-    #         if entities:
-    #             severity = [list(entity)[0] for entity in entities if list(
-    #                 entity)[1] == 'SEVERITY']
-    #             if severity:
-    #                 return Result('explanation_has_severity', True, self.wtype,
-    #                                f'Explanation mentions severity.')
-    #             return Result('explanation_has_severity', False, self.wtype,
-    #                            f'Explanation section has severity tag but is missing vulnerability severity /mention.')
-    #     return Result('explanation_has_severity', False, self.wtype,
-    #                    f'Explanation section is missing vulnerability severity tag/mention.')
-
-    # def explanation_has_location_file(self, section):
-    #     """rule:explanation_has_location_file"""
-    #     pass
-
-
-    # def explanation_has_location_method(self, section):
-    #     """rule:explanation_has_location_methodx"""
-    #     pass
-    
-
-    # def explanation_has_location_line(self, section):
-    #     """rule:explanation_has_location_line"""
-    #     pass
+            return Result('explanation_is_not_empty', True, self.wtype, 'Explanation is not empty.')
+        return Result('explanation_is_not_empty', False, self.wtype, 'Explanation is empty.')
 
 
     # def explanation_has_unchecked_vars(self, section):
@@ -299,54 +268,28 @@ class Rule:
     #     pass
 
 
-    # def metadata_has_report(self, section):
-    #     if 'report' == section.tag:
-    #         entities = section.entities
-    #         if entities:
-    #             url = [list(entity)[0]
-    #                    for entity in entities if list(entity)[1] == 'URL']
-    #             if url:
-    #                 return Result('metadata_has_report', True, self.wtype,
-    #                                f'Metadata mentions report.')
-    #         return Result('metadata_has_report', False, self.wtype,
-    #                        f'Metadata has report tag but does not have link to it.')
-    #     return Result('metadata_has_report', False, self.wtype,
-    #                    f'Metadata section is missing report tag/mention.')
+    def fix_is_not_empty(self, section):
+        """rule: fix_is_not_empty"""
+        section_text = section.text
+        if len(section_text) > self.value:
+            return Result('fix_is_not_empty', True, self.wtype, 'There is a suggested fix.')
+        return Result('fix_is_not_empty', False, self.wtype, 'There are no fix suggestions.')
 
-    # def metadata_has_cvss(self, section):
-    #     if 'cvss' == section.tag and section.lines:
-    #         return Result('metadata_has_cvss', True, self.wtype,
-    #                        f'Metadata mentions cvss score.')
-    #     return Result('metadata_has_cvss', False, self.wtype,
-    #                    f'Metadata section is missing cvss tag/mention.')
 
-    # def metadata_has_introduced_in(self, section):
-    #     if 'introduced_in' == section.tag:
-    #         entities = section.entities
-    #         if entities:
-    #             sha = [list(entity)[0]
-    #                    for entity in entities if list(entity)[1] == 'SHA']
-    #             if sha:
-    #                 return Result('metadata_has_introduced_in', True, self.wtype,
-    #                                f'Metadata mentions sha where vulnerability was introduced in.')
-    #         return Result('metadata_has_introduced_in', False, self.wtype,
-    #                        f'Metadata mentions introduced in tag but no sha was found.')
-    #     return Result('metadata_has_introduced_in', False, self.wtype,
-    #                    f'Metadata section is missing introduced in tag/mention.')
+    def fix_has_action(self, section):
+        """rule: fix_has_action
+            condition: fix """
+        entities = section.get_all_entities()
+    
+        if len(entities) > 0:
+            severity = [list(entity)[0]
+                        for entity in entities 
+                            if list(entity)[1] == 'ACTION']
+            
+            if len(severity) > 0:
+                return Result('fix_has_action', True, self.wtype, 'Suggested fix has actionable items.')
+        return Result('fix_has_action', False, self.wtype, 'Suggested fix does not provide actionable items')
 
-    # def reporter_has_reported_by(self, section):
-    #     """rule:reporter_has_reported_by"""
-    #     if 'reported_by' == section.tag and section.lines:
-    #         entities = section.entities
-    #         email = [list(entity)[0]
-    #                  for entity in entities if list(entity)[1] == 'EMAIL']
-    #         if email:
-    #             return Result('reporter_has_reported_by', True, self.wtype,
-    #                            f'Contacts section includes {self.value} info.')
-    #         return Result('reporter_has_reported_by', False, 0,
-    #                        f'Contacts section includes tag for {self.value} but email is missing.')
-    #     return Result('reporter_has_reported_by', False, self.wtype,
-    #                    f'Contacts section is missing {self.value} info.')
 
     def reporter_has_reported_by(self, section):
         """rule: reporter_has_reported_by
@@ -368,9 +311,9 @@ class Rule:
         return Result('reporter_has_reported_by', False, self.wtype, 'Report is missing the <reported-by> tag.')
 
 
-    def reporter_has_co_authored_by(self, section):
-        """rule: reporter_has_co_authored_by
-            condition: has the <co-authored-by> tag and identifies a person """
+    def reporter_has_co_reported_by(self, section):
+        """rule: reporter_has_co_reported_by
+            condition: has the <co-reported-by> tag and identifies a person """
         entities = section.entities
         tags = section.tags 
 
@@ -382,32 +325,43 @@ class Rule:
                                         if list(entity)[1] == 'EMAIL' ]
                 
                 if len(contacts) > 0:
-                    return Result('reporter_has_co_authored_by', True, self.wtype, 'Report has <co-authored-by> tag.')
+                    return Result('reporter_has_co_reported_by', True, self.wtype, 'Report has <co-reported-by> tag.')
                 else:
-                    return Result('reporter_has_co_authored_by', False, self.wtype, 'Report has the <co-authored-by> tag but does not identify a person.')
-        return Result('reporter_has_co_authored_by', False, self.wtype, 'Report is missing the <co-authored-by> tag.')
+                    return Result('reporter_has_co_reported_by', False, self.wtype, 'Report has the <co-reported-by> tag but does not identify a person.')
+        return Result('reporter_has_co_reported_by', False, self.wtype, 'Report is missing the <co-reported-by> tag.')
 
 
-    # def reporter_identifies_detection_strategy(self, section):
-    #     if 'reference' == section.tag and section.lines:
-    #         line = ''.join(section.lines)
-    #         if 'bug-tracker' in line:
-    #             entities = section.entities
-    #             url = [list(entity)[0]
-    #                    for entity in entities if list(entity)[1] == 'URL']
-    #             if url:
-    #                 return Result('reporter_identifies_detection_strategy', True, self.wtype,
-    #                                f'Reporter includes tooling.')
-    #             return Result('reporter_identifies_detection_strategy', False, self.wtype,
-    #                            f'Reporter Bug tracker section mentions bug tracker but is missing url to it.')
+    def reporter_has_method(self, section):
+        entities = section.entities
+        tags = section.tags
 
-    #         if 'resolves' in line or 'see also' in line:
-    #             entities = section.entities
-    #             issue = [list(entity)[0]
-    #                      for entity in entities if list(entity)[1] == 'ISSUE']
-    #             if issue:
-    #                 return Result('bugtracker_has_reference', True, self.wtype,
-    #                                f'Bug tracker section includes references to issues.')
+        for key, value in tags.items():
+            if self.value.lower() in value:
+                line_entities = (entities[key])
+                methods = [list(line_entities)[0] 
+                                   for entity in line_entities 
+                                        if list(entity)[1] == 'DETECTION' ]
+                
+                if len(methods) > 0:
+                    return Result('reporter_has_method', True, self.wtype, 'Report has <method> tag.')
+                else:
+                    return Result('reporter_has_method', False, self.wtype, 'Report has the <method> tag but does not specify the adopted strategy.')
+        return Result('reporter_has_method', False, self.wtype, 'Report is missing the <method> tag.')
 
-    #     return Result('bugtracker_has_reference', False, self.wtype,
-    #                    f'Bug tracker section is missing bug-tracker info.')
+
+    def reporter_has_reference(self, section):
+        entities = section.entities
+        tags = section.tags
+
+        for key, value in tags.items():
+            if self.value.lower() in value:
+                line_entities = (entities[key])
+                methods = [list(line_entities)[0] 
+                                   for entity in line_entities 
+                                        if list(entity)[1] == 'URL' ]
+                
+                if len(methods) > 0:
+                    return Result('reporter_has_reference', True, self.wtype, 'Report has <reference> tag.')
+                else:
+                    return Result('reporter_has_reference', False, self.wtype, 'Report has the <reference> tag but does not provide a URL to the tool.')
+        return Result('reporter_has_reference', False, self.wtype, 'Report is missing the <reference> tag.')
