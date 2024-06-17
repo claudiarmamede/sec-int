@@ -1,6 +1,7 @@
 import re
 
 
+
 class Result:
     def __init__(self, rule_name, result, wtype, wmessage) -> None:
         self.rule_name = rule_name
@@ -17,6 +18,7 @@ class Rule:
         self.wtype = wtype
         self.value = value
         self.section = section
+
 
     def header_max_length(self, section):
         """rule: header_max_length"""
@@ -75,10 +77,6 @@ class Rule:
 
             TODO: make something similar to cWE-id here. take into account numbers and the string "severity:" 
             """
-        # def severity_in_the_end(value, text):
-        #     return re.search(rf".*{value}(\))?$", text, re.IGNORECASE)
-        #     # return re.search(rf"\(severity: {value}\)$", text)
-        
         entities = section.get_all_entities()
         
         if len(entities) > 0:
@@ -90,11 +88,6 @@ class Rule:
                 return Result('header_has_severity', True, self.wtype, 'Header has SEVERITY.')
         return Result('header_has_severity', False, self.wtype, 'Header is missing SEVERITY at the end.')
 
-    # def header_has_location(self, section):
-    #     """rule: header_has_location
-    #        condition: header contains file path, method name and line number in the format file:method:line1(-line2)?"""
-    #     # TODO: this !! 
-    #     pass
 
     def summary_has_what(self, section):
         """rule: summary_has_what 
@@ -104,7 +97,7 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if 'what' in value:
                 line_entities = (entities[key]) 
                 description = [list(line_entities)[0] 
                                    for entity in line_entities 
@@ -118,29 +111,6 @@ class Rule:
                     return Result('summary_has_what', False, self.wtype, 'Summary has the <what> tag but is missing a description of the problem.')
         return Result('summary_has_what', False, self.wtype, 'Summary is missing the <what> tag.')
 
-
-    # def summary_what_identifies_weakness(self, section):
-    #     """ TODO: this is supposed to be checked with informativeness, not compliance!
-    #         rule: summary_what_identifies_weakness 
-    #         condition: summary section contains information regarding weakness type.
-    #     """
-    #     entities = section.entities
-    #     tags = section.tags 
-
-    #     for key, value in tags.items():
-    #         if 'what' in value:
-    #             line_entities = (entities[key]) 
-    #             description = [list(line_entities)[0] 
-    #                                for entity in line_entities 
-    #                                     if list(entity)[1] == 'FLAW' 
-    #                                     or list(entity)[1] == 'CWEID' 
-    #                                     or list(entity)[1] == 'VULNID'
-    #                                     or list(entity)[1] == 'SECWORD']
-    #             if len(description) > 0:
-    #                 return Result('summary_what_identifies_weakness', True, self.wtype, 'Summary identifies the problem in <what>')
-    #     return Result('summary_what_identifies_weakness', False, self.wtype, 'Summary does not clearly identify the problem in <what>')
- 
-
     def summary_has_why(self, section):
         """rule: summary_has_why 
             condition: summary section contains tag <why> and something useful after it
@@ -149,7 +119,7 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if 'why' in value:
                 line_entities = (entities[key]) 
                 description = [list(line_entities)[0] 
                                    for entity in line_entities 
@@ -170,7 +140,7 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if 'how' in value:
                 line_entities = (entities[key]) 
                 how = [list(line_entities)[0] 
                                    for entity in line_entities 
@@ -191,7 +161,7 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if 'when' in value:
                 line_entities = (entities[key]) 
                 date = [list(line_entities)[0] 
                                    for entity in line_entities 
@@ -212,7 +182,7 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if 'where' in value:
                 line_entities = (entities[key]) 
                 location = [list(line_entities)[0] 
                                    for entity in line_entities 
@@ -249,25 +219,48 @@ class Rule:
         return Result('explanation_is_not_empty', False, self.wtype, 'Explanation is empty.')
 
 
-    # def explanation_has_unchecked_vars(self, section):
-    #     """rule:explanation_has_unchecked_vars"""
-    #     pass
+    def explanation_has_unchecked_vars(self, section):
+        """rule:explanation_has_unchecked_vars"""
+        tags = section.tags 
 
-
-    # def explanation_has_checked_vars(self, section):
-    #     """rule:explanation_has_checked_vars"""
-    #     pass
+        for key, value in tags.items():
+            if 'unchecked-vars' in value and len(key) > len(value+2): # entire line must be bigger than "TAG: "
+                return Result('explanation_has_unchecked_vars', False, self.wtype, 'Explanation gives information regarding unchecked variables.')
+                
+        return Result('explanation_has_unchecked_vars', False, self.wtype, 'Explanation is missing information about <unchecked-vars>.')
     
-    # def explanation_has_sources(self, section):
-    #     """rule:explanation_has_sources"""
-    #     pass
 
+    def explanation_has_checked_vars(self, section):
+        """rule:explanation_has_checked_vars"""
+        tags = section.tags 
 
-    # def explanation_has_sinks(self, section):
-    #     """rule:explanation_has_sinks"""
-    #     pass
+        for key, value in tags.items():
+            if 'checked-vars' in value and len(key) > len(value+2): # entire line must be bigger than "TAG: "
+                return Result('explanation_has_checked_vars', False, self.wtype, 'Explanation gives information regarding checked variables.')
+                
+        return Result('explanation_has_checked_vars', False, self.wtype, 'Explanation is missing information about <checked-vars>.')
+    
 
+    def explanation_has_sources(self, section):
+        """rule:explanation_has_sources"""
+        tags = section.tags 
 
+        for key, value in tags.items():
+            if 'sources' in value and len(key) > len(value+2): # entire line must be bigger than "TAG: "
+                return Result('explanation_has_sources', False, self.wtype, 'Explanation gives information regarding sources.')
+                
+        return Result('explanation_has_sources', False, self.wtype, 'Explanation is missing information about <sources>.')
+    
+    def explanation_has_sinks(self, section):
+        """rule:explanation_has_sinks"""
+        tags = section.tags 
+
+        for key, value in tags.items():
+            if 'sinks' in value and len(key) > len(value+2): # entire line must be bigger than "TAG: "
+                return Result('explanation_has_sinks', False, self.wtype, 'Explanation gives information regarding sinks.')
+                
+        return Result('explanation_has_sinks', False, self.wtype, 'Explanation is missing information about <sinks>.')
+    
     def fix_is_not_empty(self, section):
         """rule: fix_is_not_empty"""
         section_text = section.text
@@ -298,7 +291,7 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if 'reported-by' in value:
                 line_entities = (entities[key]) 
                 contacts = [list(line_entities)[0] 
                                    for entity in line_entities 
@@ -318,7 +311,7 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if 'co-reported-by' in value:
                 line_entities = (entities[key]) 
                 contacts = [list(line_entities)[0] 
                                    for entity in line_entities 
@@ -336,7 +329,7 @@ class Rule:
         tags = section.tags
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if ('method' in value) or ('strategy' in value):
                 line_entities = (entities[key])
                 methods = [list(line_entities)[0] 
                                    for entity in line_entities 
@@ -354,7 +347,7 @@ class Rule:
         tags = section.tags
 
         for key, value in tags.items():
-            if self.value.lower() in value:
+            if 'reference' in value:
                 line_entities = (entities[key])
                 methods = [list(line_entities)[0] 
                                    for entity in line_entities 
