@@ -4,7 +4,7 @@ HEADER = ['vuln-detect']
 
 SUMMARY = ['what', 'why', 'how', 'when', 'where']
 
-EXPLANATION = ['unchecked-vars', 'check-vars', 'taint', 'sources', 'sinks', 'extra', 'additional']
+EXPLANATION = ['unchecked-vars', 'checked-vars', 'sources', 'sinks', 'extra', 'additional']
 
 FIX = ['suggested-fix']
 

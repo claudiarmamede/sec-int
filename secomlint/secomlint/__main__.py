@@ -44,6 +44,8 @@ def main(report:str, compliance:bool, score:bool, quiet:bool, informativeness:bo
         compliance.check(report)
         compliance.calculate_score()
         compliance.report(quiet, score, out)
+
+        print(compliance.score)
         
     if informativeness:
         report

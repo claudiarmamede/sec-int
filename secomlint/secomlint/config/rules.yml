@@ -38,18 +38,18 @@ summary_max_length:
   active: true
   type: 0
   value: 300
-# explanation_has_unchecked_vars:
-#   active: true
-#   type: 1
-# explanation_has_checked_vars:
-#   active: true
-#   type: 1
-# explanation_has_sources:
-#   active: true
-#   type: 1
-# explanation_has_sinks:
-#   active: true
-#   type: 1
+explanation_has_unchecked_vars:
+  active: true
+  type: 1
+explanation_has_checked_vars:
+  active: true
+  type: 1
+explanation_has_sources:
+  active: true
+  type: 1
+explanation_has_sinks:
+  active: true
+  type: 1
 fix_is_not_empty:
   active: true
   type: 1

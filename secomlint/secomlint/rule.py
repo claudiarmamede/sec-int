@@ -219,13 +219,15 @@ class Rule:
         return Result('explanation_is_not_empty', False, self.wtype, 'Explanation is empty.')
 
 
+    # TODO: add taint information here to confirm the variables
+
     def explanation_has_unchecked_vars(self, section):
         """rule:explanation_has_unchecked_vars"""
         tags = section.tags 
 
         for key, value in tags.items():
-            if 'unchecked-vars' in value and len(key) > len(value+2): # entire line must be bigger than "TAG: "
-                return Result('explanation_has_unchecked_vars', False, self.wtype, 'Explanation gives information regarding unchecked variables.')
+            if 'unchecked-vars' in value and len(key) > len('unchecked-vars')+2: # entire line must be bigger than "TAG: "
+                return Result('explanation_has_unchecked_vars', True, self.wtype, 'Explanation gives information regarding unchecked variables.')
                 
         return Result('explanation_has_unchecked_vars', False, self.wtype, 'Explanation is missing information about <unchecked-vars>.')
     
@@ -235,8 +237,8 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if 'checked-vars' in value and len(key) > len(value+2): # entire line must be bigger than "TAG: "
-                return Result('explanation_has_checked_vars', False, self.wtype, 'Explanation gives information regarding checked variables.')
+            if 'checked-vars' in value and len(key) > len('checked-vars')+2: # entire line must be bigger than "TAG: "
+                return Result('explanation_has_checked_vars', True, self.wtype, 'Explanation gives information regarding checked variables.')
                 
         return Result('explanation_has_checked_vars', False, self.wtype, 'Explanation is missing information about <checked-vars>.')
     
@@ -246,8 +248,8 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if 'sources' in value and len(key) > len(value+2): # entire line must be bigger than "TAG: "
-                return Result('explanation_has_sources', False, self.wtype, 'Explanation gives information regarding sources.')
+            if 'sources' in value and len(key) > len('sources')+2: # entire line must be bigger than "TAG: "
+                return Result('explanation_has_sources', True, self.wtype, 'Explanation gives information regarding sources.')
                 
         return Result('explanation_has_sources', False, self.wtype, 'Explanation is missing information about <sources>.')
     
@@ -256,8 +258,8 @@ class Rule:
         tags = section.tags 
 
         for key, value in tags.items():
-            if 'sinks' in value and len(key) > len(value+2): # entire line must be bigger than "TAG: "
-                return Result('explanation_has_sinks', False, self.wtype, 'Explanation gives information regarding sinks.')
+            if 'sinks' in value and len(key) > len('sinks')+2: # entire line must be bigger than "TAG: "
+                return Result('explanation_has_sinks', True, self.wtype, 'Explanation gives information regarding sinks.')
                 
         return Result('explanation_has_sinks', False, self.wtype, 'Explanation is missing information about <sinks>.')
     
